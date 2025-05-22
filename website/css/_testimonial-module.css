@@ -1,0 +1,24 @@
+.testimonial-module {clear: both; position: relative; padding: 80px 0; background:var(--white); z-index: 1;}
+.testimonial-module h2 {color: var(--white); text-align: center; margin-bottom: 39px;}
+.testimonial-module .testimonial-slider {align-items: center; }
+.testimonial-module .testimonial-slider .slider-for {width: 352px; height: 352px;}
+.testimonial-module .testimonial-slider .slider-for .testimonial-thumb {width:352px!important; height: 352px; left: 0!important; position: absolute!important; top: 0!important;}
+
+
+
+
+
+/*-- media css starts here --*/
+@media only screen and (max-width: 1199px) and (min-width:1024px){
+}
+
+@media only screen and (max-width: 1023px) and (min-width:200px){
+}
+
+@media only screen and (max-width: 1023px) and (min-width:768px){
+   
+}
+@media only screen and (max-width:767px) and (min-width:200px){
+   
+    
+}

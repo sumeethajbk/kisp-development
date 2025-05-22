@@ -1,0 +1,53 @@
+@import url("_default-banner.css");
+@import url("_features-module.css");
+@import url("_featurette-module.css");
+@import url("_short-services-module.css");
+@import url("_if-module.css");
+@import url("_trusted-by.css");
+@import url("_logo-slider.css");
+@import url("_blog-feature-module.css");
+@import url("_kisp-pm-module.css");
+@import url("_cta-module.css");
+
+#mainContent {padding-top: 0;}
+.if-module {padding-bottom: 0;}
+.blog-feature {padding: 80px 0 45px;}
+
+/* Featurette Module */
+.featurette-lt .h1b {max-width: 400px;}
+.featurette-single:nth-child(2n) .featurette-lt .h1b {max-width: 340px;}
+
+/* Short Services Module */
+.short-services-module {padding: 80px 0 40px 0;}
+.ss-grid.ss-txt .ss-cnt {padding-top: 0;}
+
+.kisp-pm {padding:40px 0 40px 0;}
+
+/*-- media css starts here --*/
+@media only screen and (max-width: 1280px) and (min-width:1024px){
+   
+}
+
+@media only screen and (min-width:1024px){
+   
+}
+
+@media (min-width:768px) {}
+
+
+
+@media only screen and (max-width: 1023px) and (min-width: 768px){
+    
+}
+
+@media only screen and (max-width: 1023px) and (min-width:200px){
+
+
+}
+
+@media only screen and (max-width: 767px) and (min-width: 200px){
+    
+}
+
+
+@media only screen and (max-width: 389px) {}

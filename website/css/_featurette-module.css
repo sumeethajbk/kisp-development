@@ -1,0 +1,53 @@
+.featurette-module{clear: both; width: 100%; position: relative; z-index: 1; background: var(--white);}
+.featurette-module .container {max-width: 1440px; padding: 0;}
+.featurette-module .featurette-bg {right: inherit; width: 1000%;}
+.featurette-lt {padding: 40px; flex: 1; background: var(--white);}
+.featurette-lt .featurette-cnt {display: flex; flex-wrap: wrap; flex-direction: column; height: 100%; padding: 42px 40px 39px 40px;}
+.featurette-lt .h1b {color: var(--base-foreground); margin-bottom: 18px;}
+.featurette-lt:only-child .h1b {max-width: 100%;}
+.featurette-lt .kisp-type {margin: 0 0 118px 0;}
+.featurette-lt p {font-size: 1rem; line-height: 1.5;}
+
+.featurette-rt {padding: 40px; flex: 1; position: relative;}
+.featurette-rt .featurette-thumb {clear: both; width: 100%; height: 100%; clip-path: var(--path-148);}
+
+.featurette-ftr {width: 100%; clear: both; justify-content: space-between; margin-top: auto; align-items: flex-end;}
+.featurette-ftr-lt {width: calc(100% - 50%);}
+.featurette-ftr-rt {width: 50%; text-align: right; line-height: normal; font-size: 1rem; padding: 0 0 2px 0;}
+.featurette-ftr-rt a {font-weight: bold; color: var(--base-foreground); position: relative;}
+.featurette-ftr-rt .inline-underline-wrp {margin-left: auto;}
+
+
+.featurette-single {min-height: 720px; justify-content: space-between;}
+.featurette-single:nth-child(2n) .featurette-bg {left: inherit; width: 1000%; right: 0;}
+.featurette-single:nth-child(2n)  {flex-direction: row-reverse;}
+.featurette-single:nth-child(2n) .featurette-rt .featurette-thumb {transform: scale(-1, 1);}
+.featurette-single:nth-child(2n) .featurette-rt .featurette-thumb figure {transform: scale(-1, 1);}
+
+.flex-row-reverse .featurette-single {flex-direction: row-reverse;}
+.flex-row-reverse .featurette-bg {left: inherit; width: 1000%; right: 0;}
+.flex-row-reverse .featurette-single .featurette-rt .featurette-thumb {transform: scale(-1, 1);}
+.flex-row-reverse .featurette-single .featurette-rt .featurette-thumb figure {transform: scale(-1, 1);}
+
+@media only screen and (min-width: 1024px) {
+}
+
+@media only screen and (max-width: 1400px) and (min-width: 1024px) {
+    
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 200px) {
+    
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+   
+    
+}
+
+
+
+@media only screen and (max-width: 767px) and (min-width: 200px) {
+    
+
+}

@@ -1,0 +1,31 @@
+.hero-banner-section {float: left; width: 100%; z-index: 1; position: relative; overflow: hidden; background: var(--brand-green); padding: 35px 0 0 0;}
+.hero-banner-section .container {padding: 0; max-width: 1440px;}
+.hero-banner-main {width: 100%; position: relative; gap:40px; flex-direction: row-reverse; min-height: 680px;}
+.hero-banner-main .hero-banner-thumb {clip-path: var(--path-158); width: 47.223%;}
+.hero-banner-main .hero-banner-thumb .hero-banner-img {height: 100%;}
+
+.hero-banner-main .hero-banner-text {clear: both; width: calc(100% - 50%); padding:80px 70px 80px 80px; display: flex; align-items: flex-end; flex-wrap: wrap;}
+.hero-banner-main .hero-banner-text .kisp-type {color:var(--brand-mint); margin: 0 0 22px 0;}
+.hero-banner-main .hero-banner-text .kisp-type span {background: var(--brand-mint); color: var(--brand-green);}
+.hero-banner-main .hero-banner-text h1 {color: var(--brand-mint); margin-bottom: 18px;}
+.hero-banner-main .hero-banner-text p {color: var(--brand-mint); margin-bottom: 24px;}
+
+
+/*-- media starts here --*/
+
+@media only screen and (max-width:1279px) and (min-width:810px) {
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 200px){
+    
+}
+
+@media only screen and (max-width: 1023px) and (min-width:768px){
+    
+}
+
+@media only screen and (max-width: 767px) and (min-width: 200px){
+   
+    
+
+}

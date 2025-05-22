@@ -1,0 +1,31 @@
+.more-features-module {background-color: var(--base-elevated); clear: both; width: 100%; position: relative; z-index: 1; padding: 82px 0 81px 0;}
+.more-features-module .h1b {margin-bottom: 0;}
+.mf-list-main{gap: 24px; margin: 2px auto 0 auto;}
+.mf-list {width:23.515625%; background: var(--white); padding: 38px 40px 40px 40px;}
+.mf-list .h5 {margin-bottom: 10px;}
+.mf-list .h5 a {color: var(--heading);}
+.mf-list .h5 a:hover {color: var(--base-foreground);}
+.mf-list p{line-height: 1.5; font-size: 0.875rem;}
+
+.mf-icon {margin-bottom: 20px; position: relative; width: 100%; line-height: 40px; height: 40px;}
+.mf-icon figure img{width: auto; height: auto; max-height:40px;}
+
+
+
+
+
+@media only screen and (min-width:1280px) {
+}
+
+@media only screen and (min-width:1280px) {
+
+}
+
+@media only screen and (max-width:1279px) and (min-width: 200px) {
+
+}
+
+@media only screen and (max-width:1023px) and (min-width: 768px) {
+}
+
+@media only screen and (max-width:767px) and (min-width: 200px) {}

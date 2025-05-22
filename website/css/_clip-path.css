@@ -1,0 +1,15 @@
+:root {
+    --path-660:polygon(660px 0, 100% 0, 100% calc(100% - 660px), calc(100% - 660px) 100%, 0 100%, 0 660px);
+    --path-160:polygon(0 0,calc(100% - 160px) 0,100% 160px,100% 100%,160px 100%,0 calc(100% - 160px));
+    --path-158:polygon(0 0,calc(100% - 157.5px) 0,100% 159px,100% 100%,159px 100%,0 calc(100% - 157.5px));
+    --path-148:polygon(148px 0, 100% 0, 100% calc(100% - 148px), calc(100% - 148px) 100%, 0 100%, 0 148px);
+    --path-120:polygon(0 0,calc(100% - 120px) 0,100% 120px,100% 100%,120px 100%,0 calc(100% - 120px));
+    --path-120-1:polygon(0 0,calc(100% - 120px) 0,100% 120px,100% 100%, 0 100%,0 0);
+    --path-80: polygon(0 0,calc(100% - 80px) 0,100% 80px,100% 100%,80px 100%,0 calc(100% - 80px));
+    --path-4: polygon(0 0,calc(100% - 4px) 0,100% 4px,100% 100%,4px 100%,0 calc(100% - 4px));
+    --path-24: polygon(0 0,calc(100% - 24px) 0,100% 24px,100% 100%,24px 100%,0 calc(100% - 24px));
+    --path-ltbr-24:polygon(24px 0, 100% 0, 100% calc(100% - 24px), calc(100% - 24px) 100%, 0 100%, 0 24px);
+    --path-16: polygon(0 0,calc(100% - 16px) 0,100% 16px,100% 100%,16px 100%,0 calc(100% - 16px));
+    
+    
+}

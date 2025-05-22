@@ -1,0 +1,27 @@
+.kisp-overview-module {background-color: var(--base-elevated); clear: both; width: 100%; position: relative; z-index: 1; padding: 80px 0 79px 0;}
+.kisp-overview-module .optional-text {margin: 0 0 14px 0;}
+.kisp-overview-module .h1b {margin-bottom: 38px;}
+.ko-list-main{gap:64px; width: calc(100% + 24px); padding: 24px 24px 0 24px; position: relative; left: 0;}
+.ko-list {width:20.782%; background: var(--white); padding:32px; position: relative; font-size: 1rem; line-height: 1.5;}
+
+.ko-shadow {width: calc(100% + 24px); height: calc(100% + 24px); display: block; background: var(--brand-mint); z-index: -1; left: -24px; top: -24px; clip-path: var(--path-24);}
+
+.ko-list .kisp-type {margin: 0 0 24px 0;}
+.ko-list p{margin-bottom: 20px; font-size: 0.875rem; max-width: 200px;}
+.ko-list .inline-underline-wrp .inline-underline {bottom:0;}
+
+@media only screen and (min-width:1280px) {
+}
+
+@media only screen and (min-width:1280px) {
+
+}
+
+@media only screen and (max-width:1279px) and (min-width: 200px) {
+
+}
+
+@media only screen and (max-width:1023px) and (min-width: 768px) {
+}
+
+@media only screen and (max-width:767px) and (min-width: 200px) {}

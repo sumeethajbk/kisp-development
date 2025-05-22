@@ -1,0 +1,58 @@
+@import url("_accordion.css");
+@import url("_related-blog.css");
+@import url("_cta-module.css");
+
+.general-default-article-section {float: left; width: 100%; padding:76px 0 42px 0; position: relative; z-index: 1;}
+.general-default-article-section .default-inner {position: relative; background: var(--white); padding:76px 80px 79px 80px;}
+.general-default-article-section .default-inner:only-child {max-width: 960px; margin: 0 auto;}
+.general-default-article-section .default-inner p:first-of-type span {font-size: 1.25rem; line-height: 1.5; color: var(--brand-green); display: block;}
+.general-default-article-section .default-inner > h2 {padding: 15px 0 0 0;}
+.general-default-article-section .default-inner > h3 {padding: 14px 0 0 0;}
+.general-default-article-section .default-inner > h4 {padding: 23px 0 0 0;}
+.general-default-article-section .default-inner > h5 {padding:16px 0 0 0;}
+.general-default-article-section .default-inner > h6 {padding:23px 0 0 0;}
+.general-default-article-section .default-inner blockquote + h3 {padding: 11px 0 0 0;}
+
+.default-main {justify-content: space-between;}
+
+.post-info {gap:24px; clear: both; width: 100%; font-size: 1rem; font-weight: bold; margin: 0 0 40px 0;}
+.post-info > div {position: relative; display: inline-block; padding-left: 22px;}
+.post-info > div:before {font-family: "Font Awesome 6 Sharp"; font-style: normal; font-size: 1rem; line-height:1; color:var(--brand-blue); left:0; top: 5px; position: absolute; display: inline-block; font-weight: 400;}
+.post-info .calender:before {content: "\f133";}
+.post-info .author:before {content: "\f2bd";}
+
+.fluid-width .fluid-width-wrapper {clip-path: var(--path-160);}
+/*
+.sidebar {width: calc(100% - 76.5625%);margin: 0 0 0 9.37%;}
+.sidebar .side-bucket {clear: both;}
+.sidebar .side-bucket h3  {display: block!important; border-bottom:  solid 4px var(--green); color: var(--heading); padding:0 0 8px 0!important; margin-bottom: 24px!important; font-family: DM Serif Display ,sans-serif; line-height: 1.25!important; font-size: 2rem!important; }
+.sidebar .side-bucket ul {margin: 0; padding: 0;}
+.sidebar .side-bucket ul li {display: block; margin-bottom:24px!important;}
+.sidebar .side-bucket ul li:last-child {margin-bottom: 0!important;}
+.sidebar .side-bucket ul li:before {display: none;}
+.sidebar .side-bucket ul li a {text-decoration: none; font-size: 1.125rem; font-weight: normal; padding:4px 8px 5px 8px; display: inline-block;}
+.sidebar .side-bucket ul li.active a, .sidebar .side-bucket ul li a:hover {background: var(--input); border-radius: 4px; color:rgb(57, 44, 58, 0.8);}
+*/
+
+
+/* Default Thumb */
+.default-thumb {margin:64px 0 76px 0; position: relative;}
+.default-thumb figure {overflow: hidden; height: 416px;}
+.default-thumb figure figcaption {position: absolute; font-size:1rem; line-height: 1.5;  width:calc(100% - 80px); padding:16px 40px 32px 80px; color: var(--brand-mint); background: var(--brand-blue); bottom:-48px; z-index: 1; left: 0; right: 0; margin: 0 auto; clip-path: var(--path-16);}
+.default-thumb figure figcaption:after {content: "\f03e"; display: block; position: absolute; width: 40px; height: 40px; left: 16px; font-family: "Font Awesome 6 Sharp"; top: 14px; font-weight: normal; font-size: 2.5rem; color: var(--brand-mint); line-height: 44px;}
+
+
+/*-- media css starts here --*/
+
+@media only screen and (min-width: 1024px){}
+
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+   
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 200px) {
+   
+}
+
+
+@media only screen and (max-width: 767px) and (min-width: 200px) {}

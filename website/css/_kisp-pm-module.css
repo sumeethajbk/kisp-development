@@ -1,0 +1,28 @@
+.kisp-pm {position: relative; clear: both; width: 100%; background: var(--base-elevated); padding:84px 0 40px 0; z-index: 1;}
+.kisp-pm .h1 {margin-bottom: 35px;}
+.kisp-pm-main {gap:40px; padding: 24px;}
+.kisp-shadow {width: calc(100% + 24px); height: calc(100% + 24px); display: block; background: var(--brand-mint); z-index: -1; left: -24px; top: -24px; clip-path:var(--path-24);}
+.kisp-pm-grid {width: 48.377%; background: var(--white); padding: 40px; position: relative; flex-grow: 1;}
+.kisp-pm-grid:nth-child(2n) .kisp-shadow {right: -24px; bottom: -24px; left: inherit; top: inherit;}
+.kisp-pm-thumb {min-height: 258px; max-height: 258px; width: 100%; clear: both; overflow: hidden;}
+.kisp-pm-cnt {width:100%; clear: both; margin: 41px 0 0 0;}
+.kisp-pm-cnt h2 {margin-bottom: 17px;}
+.kisp-pm-cnt p {margin-bottom: 22px;}
+
+@media only screen and (max-width:1280px) and (min-width:1024px) {
+}
+
+
+@media only screen and (max-width:1023px) and (min-width:768px) {
+    
+
+}
+
+@media only screen and (max-width:1023px) and (min-width:200px) {
+ 
+}
+
+@media only screen and (max-width:767px) and (min-width:200px) {
+
+
+}
