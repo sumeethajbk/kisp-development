@@ -1,12 +1,15 @@
 .testimonial-module {clear: both; position: relative; padding: 80px 0; background:var(--white); z-index: 1;}
-.testimonial-module h2 {color: var(--white); text-align: center; margin-bottom: 39px;}
-.testimonial-module .testimonial-slider {align-items: center; }
-.testimonial-module .testimonial-slider .slider-for {width: 352px; height: 352px;}
-.testimonial-module .testimonial-slider .slider-for .testimonial-thumb {width:352px!important; height: 352px; left: 0!important; position: absolute!important; top: 0!important;}
+.testimonial-module .slick-list {max-width: 1130px; margin: 0 auto;}
+.testimonial-flex {position: relative; z-index: 1; justify-content: space-between;}
+.testimonial-flex:before {background: var(--brand-blue); position: absolute; left: 0; top: 0; width: 100%; height: 100%; content: ""; clip-path: var(--path-24); z-index: -1;}
+.testimonial-img {width: 347px;}
+.testmonial-txt {padding: 40px 64px 64px 40px; width: calc(100% - 347px); color: var(--white); position: relative;}
+.testmonial-txt:before {background:url("../images/open-quote-mint.svg") no-repeat 0 0; top: 0; width:21px; height:24px; z-index: -1; content: ""; position: relative; display: block; margin: 0 0 24px 0;}
+.testmonial-txt p {font-weight: bold; font-size: 1.5rem; line-height: 1.5; margin-bottom: 24px;}
 
-
-
-
+.testimonial-author {clear: both; width: 100%;}
+.testimonial-author .author-name {font-weight: bold; font-size: 1.125rem; color: var(--brand-mint);}
+.testimonial-author .author-pos {font-size: 1rem; line-height: 1.5;}
 
 /*-- media css starts here --*/
 @media only screen and (max-width: 1199px) and (min-width:1024px){
