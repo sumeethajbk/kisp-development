@@ -64,4 +64,8 @@
     .featurette-rt .featurette-thumb { clip-path: var(--path-80-2);}
     .featurette-rt { padding: 20px;}
 
+    .featurette-lt { padding: 20px;}
+    .featurette-lt .featurette-cnt {padding: 12px;}
+    .featurette-lt .h1b {font-size: 40px; line-height: 1; margin-bottom: 15px;}
+
 }
