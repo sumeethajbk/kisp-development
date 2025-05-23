@@ -8,6 +8,7 @@
 @import url("_kisp-pm-module.css");
 @import url("_cta-module.css");
 
+
 /* Logo Slider */
 .logo-container {padding: 0 0 40px 0;}
 .logo-img {background: var(--base-elevated);}
@@ -21,36 +22,14 @@
 
 
 
-.product-features {position: relative; clear: both; width: 100%; z-index: 1; background: var(--base-elevated); padding: 82px 0 80px;}
-.product-features .h1b {margin-bottom:38px;}
-.pf-slider-wrap {display:flex; flex-wrap:wrap; width:calc(100% + 16px); justify-content:space-between; flex-direction:row-reverse; gap:40px; padding: 0 16px;
-  position: relative; left: 0;}
-
-.pf-rt {width:calc(100% - 424px);}
-.pf-lt {width:384px; display: flex; flex-wrap: wrap;}
-.pf-lt .pf-nav {clear: both; width: 100%;}
-.pf-slide {position: relative; display: none;}
-.pf-slide.active {display:block;}
-
-.pf-slide .pf-rt-thumb {max-height: 560px; overflow: hidden;}
-.pf-slide .pf-rt-cnt {padding: 80px 0; position: relative; z-index: 1;}
-.pf-slide .pf-rt-shadow {width:100%; height:100%; top:0; left: 0; display: block; z-index: -1; clip-path: var(--path-80); transform: scale(-1, 1);}
-
-.pf-thumb {margin: 0 0 36px 0; clear: both; width: 100%; transition: all 0.5s ease-in-out; background: var(--white);}
-.pf-thumb:last-child {margin:0;}
-.pf-thumb .pf-bg { clip-path: var(--path-16); background: var(--white-50); transform: scale(-1, 1); width: calc(100% + 16px); height: calc(100% + 16px); display: block; z-index: -1; left: -16px; bottom: -16px;}
-.pf-thumb .pf-thumb-nav {margin: 0; color: var(--brand-green); padding:12px 50px 12px 12px; cursor:pointer; font-size: 1rem; font-weight: bold; line-height: 1.5; display: flex; flex-wrap: wrap;}
-.pf-thumb .pf-thumb-nav .if-icon {height: 24px; width: 27px; position: absolute; right: 12px;}
-.pf-thumb .pf-thumb-nav .if-icon svg {width: 100%; height: 100%; fill:var(--brand-blue); filter: drop-shadow(2px 2px 0 var(--brand-mint));}
-.pf-thumb.active .pf-thumb-nav .if-icon svg {fill:var(--white); filter: none;}
-
 /*-- media css starts here --*/
 @media only screen and (max-width: 1280px) and (min-width:1024px){
    
 }
 
-@media only screen and (min-width:1024px){
-   
+@media only screen and (min-width:1440px){
+  .featurette-lt .featurette-cnt {padding: 30px 40px 40px 40px;}
+ 
 }
 
 @media (min-width:768px) {}
