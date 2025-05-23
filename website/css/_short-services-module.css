@@ -5,16 +5,19 @@
 
 .ss-grid {width: 48.4375%; display: inline-block; min-height: 620px;}
 .ss-grid .ss-thumb {position: absolute; left: 0; top: 0; width: 100%; height: 100%;}
-.ss-grid .ss-cnt {padding: 40px; clear: both; width: 100%; display: flex; flex-wrap: wrap; height: 100%; flex-direction: column;}
-.ss-grid .ss-cnt .optional-text {color: var(--base-foreground); margin: 0 0 96px 0;}
+.ss-grid.ss-txt .ss-cnt {align-content: space-between;}
+.ss-grid .ss-cnt {padding: 40px; clear: both; width: 100%; display: flex; flex-wrap: wrap; height: 100%; }
+.ss-grid .ss-cnt .optional-text {color: var(--base-foreground);  margin: 0 0 40px 0;}
 .ss-grid .ss-cnt .h1 {margin-bottom: 16px;}
 .ss-grid .ss-cnt > p {font-size: 1rem; line-height: 1.5; color: var(--brand-green);}
-.ss-grid .ss-cnt .btn-shadow-wrp {margin-top: auto;}
+.ss-grid .ss-cnt .btn-shadow-wrp {margin-top: auto; }
 .ss-grid.ss-txt .ss-cnt {align-items: flex-start;}
+.ss-grid .ss-cnt .ss-cnt-ftr{padding-top: 40px;}
 
 .ss-overlay-bg {width: 100%; height: 100%; top: 0; left: 0; display: block; opacity: 0.75; position: absolute;}
 .ss-overlay {position: absolute; top: 0; left: 0; width:100%; height: 100%; display: flex; align-items: center; right: 0; bottom: 0; margin: auto; flex-direction: column; opacity: 0; transition: opacity 0.5s ease; box-sizing: border-box; z-index: 1;}
-.ss-overlay-cnt {padding: 40px; z-index: 1; margin: 40px; background: var(--white); flex: 1; display: flex; flex-direction: column; justify-content: center;}
+.ss-overlay-cnt {padding: 40px; z-index: 1; margin: 40px; background: var(--white); flex: 1; display: flex; flex-direction: column;  overflow-y: auto;}
+.ss-overlay-inner{display: flex; margin: auto; flex-direction: column; flex-wrap: wrap;}
 .ss-grid:hover .ss-overlay {opacity:1;}
 .ss-overlay-cnt .ss-icon {width: auto; height: 40px; margin: 0 auto 22px 0;}
 .ss-overlay-cnt h2 {margin-bottom: 18px; color: var(--base-foreground);}
@@ -34,22 +37,59 @@
 @media only screen and (min-width: 1024px) {
 }
 
-@media only screen and (max-width: 1400px) and (min-width: 1024px) {
+@media only screen and (max-width: 1280px) and (min-width: 1024px) {
+    .ss-grid { width: 48.200%; min-height: 595px;}
+    .ss-module-wrap::before { clip-path: var(--path-581);}
+.ss-overlay-inner{padding-top: 40px;} 
+
+
 }
 
-@media only screen and (max-width: 1280px) and (min-width: 200px) {
+@media only screen and (max-width: 1270px) and (min-width: 1024px) {
    
+    .ss-grid { width: 47.5%; }
+    .ss-grid .ss-cnt .h1 {font-size: 3.5rem;}
 }
 
 @media only screen and (max-width: 1023px) and (min-width: 768px) {
-   
-    
+   .ss-module-wrap { gap: 32px; width: calc(100% + 64px); left: -32px; padding: 32px; }
+   .ss-grid.ss-grid.ss-txt .ss-cnt { padding:  0;}
+   .ss-grid { width: 47.438%; min-height: 325px; }
+   .ss-grid .ss-cnt .optional-text {margin: 0 0 20px 0;}
+   .ss-cnt-wrap p{font-size: 14px; line-height: 1.5; }
+   .ss-grid .ss-cnt .ss-cnt-ftr { padding-top: 20px; }
+   .ss-grid .ss-cnt { padding: 32px;}
+   .ss-module-wrap::before {clip-path: var(--path-362)};
+   .ss-grid .ss-cnt .h1 {font-size: 3.5rem;}
+   .ss-overlay-cnt { padding: 20px;}
+   .ss-overlay-cnt h2 {font-size: 2rem;}
+
 }
+
 
 
 
 @media only screen and (max-width: 767px) and (min-width: 200px) {
-  
+    .short-services-module { padding: 20px 0!important; } 
+    .ss-module-wrap{flex-direction: column;}
+    .ss-grid{width: 100%;}
+    .ss-module-wrap { gap: 40px; width: calc(100% + 160px); position: relative; left: -80px; padding: 20px; }
+    .ss-grid .ss-cnt .optional-text {margin: 0 0 22px 0;}
+    .ss-module-wrap::before {clip-path: var(--path-120)};
+
     
 
+    .short-services-module   .container { padding: 0 20px;}
+
+    .ss-module-wrap { width: 100%; left: 0; padding: 20px; }
+    .ss-grid.ss-txt .ss-cnt{padding: 0;}
+    .ss-grid.ss-txt{min-height: inherit;}
+    .ss-grid .ss-cnt .h1 {font-size: 3rem;}
+    .ss-grid{min-height: 310px; align-items: flex-end; display: flex;}
+    .ss-grid .ss-cnt { padding: 20px;}
+
+    .ss-overlay-cnt { padding: 16px;}
+   .ss-overlay-cnt h2 {font-size: 1.5rem;}
+
+   .ss-grid .btn-white .button{font-size: 1.125rem;}
 }
