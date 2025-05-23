@@ -17,9 +17,14 @@
 
 @media only screen and (min-width: 1024px) {
 }
+@media only screen and (max-width: 1280px) and (min-width: 1024px) {
+    .if-txt {padding: 110px 64px 86px 40px;}
 
-@media only screen and (max-width: 1400px) and (min-width: 1024px) {
+
+}
     
+@media only screen and (max-width: 1400px) and (min-width: 200px) {
+    .if-txt .if-cnt p {font-size: 14px;}
 }
 
 @media only screen and (max-width: 1200px) and (min-width: 1024px) {
@@ -28,8 +33,15 @@
 }
 
 @media only screen and (max-width: 1023px) and (min-width: 768px) {
+    .if-main {gap: 32px;}
     .if-module {padding: 64px 0;}
-    .if-module .h1 {font-size: 3.5rem;}
+    .if-module .h1 {font-size: 3.5rem; margin-bottom: 32px;}
+    .if-row{gap: 32px;}
+    .if-img {width: calc(100% - 357px);}
+    .if-txt {width: 325px; padding: 50px 48px 34px 40px;}
+    .if-cnt .h3{font-size: 2rem; margin-bottom: 14px;}
+    .if-txt .if-cnt .if-icon { margin: 0 auto 16px 0;}
+
    
     
 }
@@ -37,6 +49,13 @@
 
 
 @media only screen and (max-width: 767px) and (min-width: 200px) {
-    
+    .if-module {padding: 40px 0;}
+    .if-module .h1 {font-size: 3rem; margin-bottom: 16px;}
+    .if-main {gap: 20px;}
+    .if-row{gap: 20px;}
+    .if-img{width: 100%;}
+    .if-txt{width: 100%; padding: 34px 34px 20px 20px;}
+    .if-cnt .h3{font-size: 1.5rem; margin-bottom: 12px;}
+    .if-txt .if-cnt .if-icon { margin: 0 auto 11px 0; }
 
 }
