@@ -20,6 +20,9 @@
 .ss-overlay-inner{display: flex; margin: auto; flex-direction: column; flex-wrap: wrap;}
 .ss-grid:hover .ss-overlay {opacity:1;}
 .ss-overlay-cnt .ss-icon {width: auto; height: 40px; margin: 0 auto 22px 0;}
+.ss-overlay-cnt .ss-icon figure {width: 100%; height: 100%; display: block;}
+.ss-overlay-cnt .ss-icon figure img {width: 100%; height: 100%; font-family: "object-fit:cover"; object-fit: cover; -o-object-fit: cover; object-position: 50% 50%;
+-o-object-position: 50% 50%;}
 .ss-overlay-cnt h2 {margin-bottom: 18px; color: var(--base-foreground);}
 .ss-overlay-cnt p {font-size:0.875rem; line-height: 1.5; margin-bottom: 23px;}
 

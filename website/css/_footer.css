@@ -34,7 +34,7 @@ footer#main_footer .footer_btm .ftr-btm-rt .ftr-btm-btns {clear: both; width: 10
 footer#main_footer .footer_btm .ftr-btm-rt .ftr-btm-btns ul {margin: 0; display: flex; flex-wrap: wrap; width: 100%; gap:0 16px; justify-content: space-between;}
 footer#main_footer .footer_btm .ftr-btm-rt .ftr-btm-btns ul li {display: flex; flex-wrap: wrap; align-items: center; gap:8px; font-weight: 700; font-size: 1rem; line-height: 1.2; width: 46.2962962962963%; margin: 16px 0 0 0;}
 footer#main_footer .footer_btm .ftr-btm-rt .ftr-btm-btns ul li span {padding:10.4px 16.5px; background: var(--brand-mint); color: var(--brand-green); border-radius: 20px; text-transform: uppercase;}
-footer#main_footer .footer_btm .ftr-btm-rt .ftr-btm-btns ul li a {color: var(--brand-mint);}
+footer#main_footer .footer_btm .ftr-btm-rt .ftr-btm-btns ul li a {color: var(--brand-mint); display: flex; align-items: center; gap: 8px;}
 footer#main_footer .footer_btm .ftr-btm-rt .ftr-btm-btns ul li a:hover {color: var(--white);}
 
 @media only screen and (max-width:1280px) and (min-width:200px) {
