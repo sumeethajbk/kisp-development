@@ -13,6 +13,8 @@
     --path-80: polygon(0 0,calc(100% - 80px) 0,100% 80px,100% 100%,80px 100%,0 calc(100% - 80px));
     --path-80-1: polygon(0 0,calc(100% - 75px) 0,100% 75px,100% 100%,75px 100%,0 calc(100% - 75px));
     --path-80-2: polygon(0 0,calc(100% - 77px) 0,100% 70px,100% 100%,70px 100%,0 calc(100% - 77px));
+    --path-60: polygon(0 0,calc(100% - 60px) 0,100% 60px,100% 100%,60px 100%,0 calc(100% - 60px));
+
 
     --path-4: polygon(0 0,calc(100% - 4px) 0,100% 4px,100% 100%,4px 100%,0 calc(100% - 4px));
     --path-24: polygon(0 0,calc(100% - 24px) 0,100% 24px,100% 100%,24px 100%,0 calc(100% - 24px));
