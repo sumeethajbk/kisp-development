@@ -1,8 +1,9 @@
 .testimonial-module {clear: both; position: relative; padding: 80px 0; background:var(--white); z-index: 1;}
-.testimonial-module .slick-list {max-width: 1130px; margin: 0 auto;}
+.testimonial-module .slick-list {padding: 0 75px; margin: 0 auto;}
 .testimonial-flex {position: relative; z-index: 1; justify-content: space-between;}
 .testimonial-flex:before {background: var(--brand-blue); position: absolute; left: 0; top: 0; width: 100%; height: 100%; content: ""; clip-path: var(--path-24); z-index: -1;}
-.testimonial-img {width: 347px;}
+.testimonial-img {width: 347px; margin-bottom: 24px;}
+.testimonial-img img {filter: grayscale(100%) brightness(1) contrast(1); mix-blend-mode: lighten;}
 .testmonial-txt {padding: 40px 64px 64px 40px; width: calc(100% - 347px); color: var(--white); position: relative;}
 .testmonial-txt:before {background:url("../images/open-quote-mint.svg") no-repeat 0 0; top: 0; width:21px; height:24px; z-index: -1; content: ""; position: relative; display: block; margin: 0 0 24px 0;}
 .testmonial-txt p {font-weight: bold; font-size: 1.5rem; line-height: 1.5; margin-bottom: 24px;}
