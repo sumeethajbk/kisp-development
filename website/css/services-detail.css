@@ -1,14 +1,24 @@
 @import url("_hero-banner.css");
 @import url("_intro-module.css");
 @import url("_featurette-module.css");
-@import url("_mfg-module.css");
 @import url("_more-features-module.css");
-@import url("_pricing-module.css");
-@import url("_short-services-module.css");
+@import url("_kisp-overview-module.css");
 @import url("_trusted-by.css");
 @import url("_logo-slider.css");
 @import url("_kisp-pm-module.css");
 @import url("_cta-module.css");
+
+/* Logo Slider */
+.logo-container {padding: 0 0 40px 0;}
+.logo-img {background: var(--base-elevated);}
+.logo-img img {mix-blend-mode: multiply; position: relative; z-index: 1;}
+.logo-slider-row::before, .logo-slider-row::after {background-image: linear-gradient(to right, var(--base-elevated) 0%, rgba(255, 255, 255, 0) 100%);}
+
+
+.kisp-overview-module {padding: 80px 0 40px 0;}
+
+
+
 
 
 .product-features {position: relative; clear: both; width: 100%; z-index: 1; background: var(--base-elevated); padding: 82px 0 80px;}

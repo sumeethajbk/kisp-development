@@ -2,7 +2,7 @@
 .kisp-overview-module .optional-text {margin: 0 0 14px 0;}
 .kisp-overview-module .h1b {margin-bottom: 38px;}
 .ko-list-main{gap:64px; width: calc(100% + 24px); padding: 24px 24px 0 24px; position: relative; left: 0;}
-.ko-list {width:20.782%; background: var(--white); padding:32px; position: relative; font-size: 1rem; line-height: 1.5;}
+.ko-list {width:/*20.782%*/21.177%; background: var(--white); padding:32px; position: relative; font-size: 1rem; line-height: 1.5;}
 
 .ko-shadow {width: calc(100% + 24px); height: calc(100% + 24px); display: block; background: var(--brand-mint); z-index: -1; left: -24px; top: -24px; clip-path: var(--path-24);}
 
