@@ -47,9 +47,9 @@ ul.main_menu li.flex-menu > ul { max-width:1440px; width:100%; max-height: none;
 ul.main_menu li.flex-menu > ul > li {display:flex; width:100%; margin:0 0 40px 0; flex-wrap: wrap;}
 ul.main_menu li.flex-menu > ul > li .button:hover {color: var(--white);}
 ul.main_menu li.flex-menu > ul > li.flex-menu-child {justify-content: space-between; align-items: center;}
-ul.main_menu li.flex-menu > ul > li.flex-menu-child .h3 {margin: 0;}
+ul.main_menu li.flex-menu > ul > li.flex-menu-child .h3 {margin: 0; width: 75%;}
 ul.main_menu li.flex-menu > ul > li:before {display: none;}
-ul.main_menu li.flex-menu > ul > li ul {margin:0; display: flex; flex-wrap: wrap; gap:4.409722222222222%; width: calc(100% + 16px); padding: 16px 0 0 16px; position: relative; left: 0; align-items:stretch;}
+ul.main_menu li.flex-menu > ul > li ul {margin:0; display: flex; flex-wrap: wrap; gap:40px 4.409722222222222%; width: calc(100% + 16px); padding: 16px 0 0 16px; position: relative; left: 0; align-items:stretch;}
 ul.main_menu li.flex-menu > ul > li ul li {width:21.678%; background: var(--white); padding: 20px 20px 24px 20px; position: relative; font-size: 0.875rem; line-height: 1.5; margin: 0; display: flex; flex-wrap: wrap; flex-direction: column; flex-grow: 1;}
 ul.main_menu li.flex-menu > ul > li ul li .kisp-type {margin: 0 0 20px 0;}
 ul.main_menu li.flex-menu > ul > li ul li .menu-shadow {width: calc(100% + 16px); height: calc(100% + 16px); display: block; background: var(--brand-mint);
@@ -130,6 +130,8 @@ nav.navigation {transition:.4s all ease-in-out; margin:4px 0 0 0;}
 
 @media only screen and (max-width:1279px) and (min-width:768px) {
 .main_header .container, .main_header.fixed-header .container, .white-header .main_header .container {padding: 0 32px;}
+    
+    ul.main_menu li.flex-menu > ul {padding: 80px 32px;}
 }
 
 
