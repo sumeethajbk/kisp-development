@@ -53,7 +53,7 @@
     .if-module .h1 {font-size: 3rem; margin-bottom: 16px;}
     .if-main {gap: 20px;}
     .if-row{gap: 20px;}
-    .if-img{width: 100%;}
+    .if-img{width: 100%; min-height: 311px;}
     .if-txt{width: 100%; padding: 34px 34px 20px 20px;}
     .if-cnt .h3{font-size: 1.5rem; margin-bottom: 12px;}
     .if-txt .if-cnt .if-icon { margin: 0 auto 11px 0; }

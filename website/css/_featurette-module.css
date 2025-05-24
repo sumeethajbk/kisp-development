@@ -60,7 +60,7 @@
 }
 
 @media only screen and (max-width: 767px) and (min-width: 200px) {
-    .featurette-single{flex-direction: column-reverse;}
+    .featurette-single{flex-direction: column-reverse!important;}
     .featurette-rt .featurette-thumb { clip-path: var(--path-80-2);}
     .featurette-rt { padding: 20px;}
 

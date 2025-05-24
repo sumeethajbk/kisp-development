@@ -378,6 +378,9 @@ html.no-scroll {overflow:hidden;}
     .hide-in-mobile {display:none;}    
 
     .h1 {font-size: 2.5rem; letter-spacing: 0.8px;}
+
+    .h3{font-size: 1.5rem; letter-spacing: 0.48px;}
+    
     .video-thumbnail iframe{min-height: 197px!important;}    
     .video-wrap .video-thumbnail > img {min-height: 197px;}
 

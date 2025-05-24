@@ -16,15 +16,36 @@
 @media only screen and (min-width:1280px) {
 }
 
-@media only screen and (min-width:1280px) {
+@media only screen and (max-width:1280px) {
 
+    .intro-grid p {font-size: 0.875rem;}
 }
 
-@media only screen and (max-width:1279px) and (min-width: 200px) {
+@media only screen and (max-width:1280px) and (min-width: 1024px) {
+    .intro-module{padding: 64px 0;}
+    .intro-module .h1b { font-size: 3rem; margin-bottom: 32px; }
+    .intro-grid { flex: 0 0 calc(50% - 40px);}
+    .intro-inner { gap: 32px; }
 
 }
 
 @media only screen and (max-width:1023px) and (min-width: 768px) {
+    .intro-module {padding: 64px 0 64px;}
+    .intro-module .h1b { font-size: 3rem; letter-spacing: 0.96px; margin-bottom: 30px;}
+    .intro-grid { flex: 0 0 calc(50% - 40px);}
+    .intro-inner { gap: 32px; }
+    .intro-grid .h3 {font-size: 2rem;}
+
+    .intro-icon { margin-bottom: 18px}
 }
 
-@media only screen and (max-width:767px) and (min-width: 200px) {}
+@media only screen and (max-width:767px) and (min-width: 200px) {
+     .intro-module {padding: 40px 0 40px;}
+    .intro-module .h1b { font-size: 2.5rem; letter-spacing: 0.8px; margin-bottom: 16px;}
+    .intro-inner{flex-direction: column; gap: 24px;}
+    .intro-grid { flex: 100%;}
+
+
+
+
+}
