@@ -10,7 +10,7 @@
 .pb-slider-wrap {display:flex; flex-wrap:wrap; width:100%; justify-content:space-between; flex-direction:row-reverse; gap:80px;}
 
 .pb-rt {width:calc(100% - 480px);}
-.pb-lt {width:400px; padding:94px 0 0; display: flex; flex-wrap: wrap; align-items: center;}
+.pb-lt {width:400px; padding:94px 0 0; display: flex; flex-wrap: wrap; align-items: center; flex-grow: 1;}
 .pb-lt .pb-nav {margin: 39px 0 0 0; clear: both; width: 100%; max-width: 322px;}
 .pb-txt p {color: var(--brand-mint);}
 .pb-slide {position: relative; display: none;}

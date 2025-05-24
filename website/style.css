@@ -143,7 +143,7 @@ img.mobile {display:none;}
 .iframe-container iframe {border: 0; height: 100%; left: 0; position: absolute; top: 0; width: 100%;}
 
 body .mfp-image-holder .mfp-close, body .mfp-iframe-holder .mfp-close {padding-right: 0; width: 40px;height: 40px; opacity: 1;line-height: 40px; top: -45px; background-color: var(--cerulean); right: -45px; display: flex; align-items: center; justify-content: center; border-radius: 6px;}
-body .mfp-image-holder .mfp-close:hover, body .mfp-iframe-holder .mfp-close:hover {background-color: var(--sunshine); color: var(--midnight);}
+body .mfp-image-holder .mfp-close:hover, body .mfp-iframe-holder .mfp-close:hover {background-color: var(--brand-green); color: var(--brand-mint);}
 body .mfp-close:after {display: none;}
 body .mfp-iframe-holder button.mfp-close::before{left:0;} 
 
@@ -203,24 +203,6 @@ audio::-webkit-media-controls-enclosure {border-radius: 0; background: transpare
 .slick-arrow span {position: relative; display: inline-block; vertical-align: middle;}
 .slick-arrow span i {font-size:2.5rem; color:var(--brand-blue); text-shadow: 2px 2px 0 var(--brand-mint); line-height:1; position: relative; display: inline-block; vertical-align: middle;}
 
-
-
-
-
-/* Custom slick arrow */
-.custom_arrows_wc {display: flex; justify-content: center;	align-items: center; width: 100%; position: relative;}
-.custom_arrow {cursor: pointer; margin:auto 0; top: 0; bottom: 0; background: var(--midnight); border-color: var(--midnight);}
-.custom_arrow_dir_right {margin-left: auto;}
-.custom_arrow_dir_left:after, .custom_arrow_dir_right:after {content: "\f104"; font-family: 'Font Awesome 6 Pro'; font-size: 1.25rem;display: flex; align-items: center; justify-content: center; transition: all 0.3s ease-in-out; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; left: 0; color: var(--heading); font-weight: 400;}
-.custom_arrow_dir_right:after {content: "\f105";}
-.custom_arrow_dir_left:hover:after, .custom_arrow_dir_right:hover:after {color:var(--white);}
-
-.custom_dots_list {display:flex; justify-content:center; align-items:center; flex-wrap:wrap; margin:0!important}
-.custom_dots_list li {text-indent:-99999px; width:8px; height:8px; min-width:0; padding:0; font-size:0; line-height:0; border:0 none; background:var(--lime-500); border-radius: 50%; cursor:pointer; margin:4.5px 9px 4.5px 0!important;}
-.custom_dots_list li:before {display:none}
-.custom_dots_list li.slick-active {background:var(--white);}
-.custom_dots_list li.slick-active:after {opacity:1;}
-.custom-flex {align-items:center; justify-content:space-between; margin: 75px 0 0 0;}
 
 
 #blog_list{margin: 0;}
