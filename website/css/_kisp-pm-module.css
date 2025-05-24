@@ -42,14 +42,15 @@
 }
 
 @media only screen and (max-width:767px) and (min-width:200px) {
-    .kisp-pm-main { gap: 16px; padding: 16px; }
-    .kisp-pm .h1{font-size: 3rem; margin-bottom: 25px;}
+   
+    .kisp-pm-main { gap: 32px; padding: 16px; flex-direction: column; }
+    .kisp-pm .h1{font-size: 3rem; margin-bottom: 25px; }
     .kisp-shadow { width: calc(100% + 16px); height: calc(100% + 16px); left: -16px; top: -16px; clip-path: var(--path-24);}
-    .kisp-pm-grid {padding: 20px;}
+    .kisp-pm-grid {padding: 20px; width: calc(100% + 16px); margin-left: 0;}
 
     .kisp-pm-thumb { min-height: 127px; max-height: 127px;}
     .kisp-pm-cnt { margin: 20px 0 0 0;}
     .kisp-pm-grid:nth-child(2n) .kisp-shadow { right: -16px; bottom: -16px; }
-
+ .kisp-pm-grid:nth-child(2n){margin-left: -16px;}
 
 }
