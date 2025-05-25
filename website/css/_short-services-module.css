@@ -3,7 +3,7 @@
 .ss-module-wrap {gap:40px; width: calc(100% + 80px); position: relative; left: -40px; padding: 40px;}
 .ss-module-wrap:before {content: ""; background: var(--white); position: absolute; left: 0; top:0; width: 100%; height: 100%; display: block; clip-path: var(--path-660);}
 
-.ss-grid {width: 48.4375%; display: inline-block; min-height: 620px;}
+.ss-grid {width: 48.4375%; display: inline-block; min-height: 620px; overflow: hidden;}
 .ss-grid .ss-thumb {position: absolute; left: 0; top: 0; width: 100%; height: 100%;}
 .ss-grid.ss-txt .ss-cnt {align-content: space-between;}
 .ss-grid .ss-cnt {padding: 40px; clear: both; width: 100%; display: flex; flex-wrap: wrap; height: 100%; }
@@ -56,7 +56,7 @@
 
 @media only screen and (max-width: 1023px) and (min-width: 768px) {
    .ss-module-wrap { gap: 32px; width: calc(100% + 64px); left: -32px; padding: 32px; }
-   .ss-grid.ss-grid.ss-txt .ss-cnt { padding:  0;}
+   .ss-grid.ss-txt .ss-cnt { padding:  0;}
    .ss-grid { width: 47.438%; min-height: 325px; }
    .ss-grid .ss-cnt .optional-text {margin: 0 0 20px 0;}
    .ss-cnt-wrap p{font-size: 14px; line-height: 1.5; }
@@ -64,19 +64,11 @@
    .ss-grid .ss-cnt { padding: 32px;}
    .ss-module-wrap::before {clip-path: var(--path-362)};
    .ss-grid .ss-cnt .h1 {font-size: 3.5rem;}
-   .ss-overlay-cnt { padding: 20px;}
+   .ss-overlay-cnt { padding: 20px; margin: 32px;}
    .ss-overlay-cnt h2 {font-size: 2rem;}
 
-   .ss-two .btn-white::before {
-  content: "";
-  width: calc(100% + 32px);
-  height: calc(100% + 32px);
-  clip-path: polygon(0 0,calc(100% - 32px) 0,100% 32px,100% 100%,32px 100%,0 calc(100% - 32px));}
-
-  .ss-two .ss-grid.ss-txt .btn-shadow {width: calc(100% + 32px);
-  height: calc(100% + 32px); 
-  clip-path: polygon(0 0,calc(100% - 32px) 0,100% 32px,100% 100%,32px 100%,0 calc(100% - 32px));}
-
+   .ss-two .btn-white::before { content: ""; width: calc(100% + 32px); height: calc(100% + 32px); clip-path: polygon(0 0,calc(100% - 32px) 0,100% 32px,100% 100%,32px 100%,0 calc(100% - 32px));}
+  .ss-two .ss-grid.ss-txt .btn-shadow {width: calc(100% + 32px); height: calc(100% + 32px); clip-path: polygon(0 0,calc(100% - 32px) 0,100% 32px,100% 100%,32px 100%,0 calc(100% - 32px));}
 }
 
 
@@ -101,7 +93,7 @@
     .ss-grid{min-height: 310px; align-items: flex-end; display: flex;}
     .ss-grid .ss-cnt { padding: 20px;}
 
-    .ss-overlay-cnt { padding: 16px;}
+    .ss-overlay-cnt { padding: 16px; margin: 20px;}
    .ss-overlay-cnt h2 {font-size: 1.5rem;}
 
    .ss-grid .btn-white .button{font-size: 1.125rem;}
