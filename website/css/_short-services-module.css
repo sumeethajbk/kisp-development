@@ -67,6 +67,16 @@
    .ss-overlay-cnt { padding: 20px;}
    .ss-overlay-cnt h2 {font-size: 2rem;}
 
+   .ss-two .btn-white::before {
+  content: "";
+  width: calc(100% + 32px);
+  height: calc(100% + 32px);
+  clip-path: polygon(0 0,calc(100% - 32px) 0,100% 32px,100% 100%,32px 100%,0 calc(100% - 32px));}
+
+  .ss-two .ss-grid.ss-txt .btn-shadow {width: calc(100% + 32px);
+  height: calc(100% + 32px); 
+  clip-path: polygon(0 0,calc(100% - 32px) 0,100% 32px,100% 100%,32px 100%,0 calc(100% - 32px));}
+
 }
 
 
