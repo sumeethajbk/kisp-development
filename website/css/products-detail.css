@@ -26,8 +26,6 @@
 .pf-slide .pf-rt-cnt {padding: 80px 0; position: relative; z-index: 1;}
 .pf-slide .pf-rt-shadow {width:100%; height:100%; top:0; left: 0; display: block; z-index: -1; clip-path: var(--path-80); transform: scale(-1, 1);}
 
-.pf-thumb {margin: 0 0 36px 0; clear: both; width: 100%; transition: all 0.5s ease-in-out; background: var(--white);}
-.pf-thumb:last-child {margin:0;}
 .pf-thumb .pf-bg { clip-path: var(--path-16); background: var(--white-50); transform: scale(-1, 1); width: calc(100% + 16px); height: calc(100% + 16px); display: block; z-index: -1; left: -16px; bottom: -16px;}
 .pf-thumb .pf-thumb-nav {margin: 0; color: var(--brand-green); padding:12px 50px 12px 12px; cursor:pointer; font-size: 1rem; font-weight: bold; line-height: 1.5; display: flex; flex-wrap: wrap;}
 .pf-thumb .pf-thumb-nav .if-icon {height: 24px; width: 27px; position: absolute; right: 12px;}
@@ -35,6 +33,10 @@
 .pf-thumb.active .pf-thumb-nav .if-icon svg {fill:var(--white); filter: none;}
 
 /*-- media css starts here --*/
+@media only screen and (min-width:1024px){
+  .pf-thumb {margin: 0 0 36px 0; clear: both; width: 100%; transition: all 0.5s ease-in-out; background: var(--white);}
+  .pf-thumb:last-child {margin:0;}
+}
 @media only screen and (max-width: 1280px) and (min-width:1024px){
   .pf-slide .pf-rt-shadow {clip-path: var(--path-80-1);}
   .pf-slide .pf-rt-cnt { padding: 75px 0;}
@@ -62,14 +64,38 @@
     
 }
 
-@media only screen and (max-width: 1023px) and (min-width:200px){
-
+@media only screen and (max-width: 1023px) and (min-width:768px){
+  .pf-rt.pf-slider-for{width: 100%}
+  .pf-lt{width: 100%;}
+  .pf-nav.pf-slider-nav{display: flex; gap: 24px; flex-wrap: wrap;}
+  .pf-thumb{width: calc(50% - 24px);}
 
 }
 
 @media only screen and (max-width: 767px) and (min-width: 200px){
-    
+  .product-features {padding: 40px 0 40px;}
+  .product-features .h1b {font-size: 2.5rem; margin-bottom: 20px;}
+    .pf-slider-wrap{display: block}
+  .pf-rt{display: block; width: 100%}
+  .pf-lt{display: block; width: 100%; padding-top: 20px;}
+
+  .pf-thumb .pf-bg {
+  clip-path: var(--path-12);
+  transform: scale(-1, 1);
+  width: calc(100% + 12px);
+  height: calc(100% + 12px); left: -12px; bottom: -12px}
+  .pf-slide{height: 286px;}
+  .pf-slider-nav .slick-list{overflow: inherit;}
+  .pf-slider-nav .pf-thumb{margin: 0 13px; width: 312px;}
+  .pf-thumb .pf-thumb-nav{background-color: var(--white);}
+  .custom-arrows{padding-top: 20px; gap: 42px; width: fit-content; margin: auto;}
+  .custom-arrows .slick-arrow{position: relative;}
+
+  .pf-slide .pf-rt-cnt { padding: 30px 0;}
+
+  .pf-slide .pf-rt-shadow {clip-path: var(--path-25);}
 }
+
 
 
 @media only screen and (max-width: 389px) {}
