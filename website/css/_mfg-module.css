@@ -4,11 +4,25 @@
 .mfg-list {display: inline-block;}
 .mfg-list img{height: 88px;}
 
-@media only screen and (max-width: 1240px) and (min-width: 1024px) {
+@media only screen and (max-width: 1280px) and (min-width: 1024px) {
+
+    .mfg-list img { height: 76px; }
 }
 
 @media only screen and (max-width: 1023px) and (min-width: 768px) {
+       .mfg-module {padding: 84px 0 69px;}
+   .mfg-wrap h2 { margin: 0; font-size: 2.5rem; letter-spacing: 0.8px;}
+
 }
 
-@media only screen and (max-width: 767px) and (min-width: 200px) {   
+@media only screen and (max-width: 767px) and (min-width: 200px) { 
+    .mfg-module {padding: 40px 0;}
+    .mfg-wrap .heading-lt h2{font-size: 2rem;}
+    .mfg-list{flex: 44%}
+    .mfg-list-main {gap: 0 10px;}
+    .mfg-wrap .heading{padding:  0 0 15px;}
+    .mfg-list img { height: 80px; }
+    .mfg-module .btn-full.hide-in-desktop{margin-top: 15px;}
+
+    
 }

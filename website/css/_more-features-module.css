@@ -14,18 +14,45 @@
 
 
 
-@media only screen and (min-width:1280px) {
-}
-
-@media only screen and (min-width:1280px) {
+@media only screen and (max-width:1370px) {
+    .mf-list { width: 23.3%;}
 
 }
 
-@media only screen and (max-width:1279px) and (min-width: 200px) {
+@media only screen and (min-width:1280px) {
+    .mf-list p {font-size: 0.75rem;}
 
+}
+
+@media only screen and (max-width:1024px) and (min-width: 200px) {
+.mf-list {  padding: 32px;}
+.mf-list p{font-size: 0.75rem;}
+
+}
+
+@media only screen and (max-width:1279px) and (min-width: 1024px) {
+ .mf-list { width: 22.7%;  }
 }
 
 @media only screen and (max-width:1023px) and (min-width: 768px) {
+    .mf-list-main { gap: 20px;}
+    .more-features-module .h1b {font-size: 3rem;}
+    .mf-wrap .heading-lt{width: 80%}
+    .mf-wrap .heading-rt{width: 20%}
+    .mf-list { width: 48%; }
+    .more-features-module {padding: 64px 0;}
 }
 
-@media only screen and (max-width:767px) and (min-width: 200px) {}
+@media only screen and (max-width:767px) and (min-width: 200px) {
+    .more-features-module .h1b {font-size: 2.5rem;}
+    .more-features-module {padding: 40px 0;}
+
+    .mf-icon { margin-bottom: 12px;}
+    .mf-wrap .heading{padding-bottom: 20px;}
+    .mf-list-main{flex-direction: column; gap: 12px;}
+    .mf-list { width: 100%; padding: 20px; }
+    .mf-wrap .btn-full.hide-in-desktop { margin-top: 26px; }
+    .mf-list .h5 {font-size: 1.125rem;}
+
+
+}

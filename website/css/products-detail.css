@@ -36,9 +36,17 @@
 
 /*-- media css starts here --*/
 @media only screen and (max-width: 1280px) and (min-width:1024px){
-   
-}
+  .pf-slide .pf-rt-shadow {clip-path: var(--path-80-1);}
+  .pf-slide .pf-rt-cnt { padding: 75px 0;}
 
+
+}
+@media only screen and (max-width: 1149px) and (min-width:1024px){
+  .pf-lt { width: 320px;}
+  .pf-rt { width: calc(100% - 360px); }
+
+
+}
 @media only screen and (min-width:1024px){
    
 }
@@ -48,6 +56,9 @@
 
 
 @media only screen and (max-width: 1023px) and (min-width: 768px){
+  .product-features {padding: 64px 0;}
+  .product-features .h1b {font-size: 3rem; margin-bottom: 32px;}
+  .pf-slider-wrap{flex-direction: column;}
     
 }
 

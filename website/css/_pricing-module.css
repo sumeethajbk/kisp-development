@@ -21,15 +21,48 @@
 @media only screen and (min-width:1280px) {
 }
 
-@media only screen and (min-width:1280px) {
+@media only screen and (max-width:1400px) and (min-width: 1024px){
+    .pm-list { width: 22.5%; }
+    .pm-list p{font-size: 12px;}
+    .pm-list li {font-size: 12px; margin-bottom: 5px;}
+
 
 }
 
-@media only screen and (max-width:1279px) and (min-width: 200px) {
+@media only screen and (max-width:1279px) and (min-width: 1024px) {
+     .pm-list-main{gap: 33px;}
+     .pm-list { width: 48%; }
+     .pm-list {padding: 16px;}
+    
 
 }
 
 @media only screen and (max-width:1023px) and (min-width: 768px) {
+    .pricing-module {padding: 64px 0;}
+    .pm-list-main{gap: 33px;}
+    .pricing-module .h1b {font-size: 3rem;}
+    .pm-list { width: 47%; }
+    .pm-list p{font-size: 12px;}
+    .pm-list li { margin-bottom: 4px;}
+    .pm-list p { margin-bottom: 15px; }
 }
 
-@media only screen and (max-width:767px) and (min-width: 200px) {}
+@media only screen and (max-width:767px) and (min-width: 200px) {
+    .pricing-module {padding: 40px 0;}
+    .pricing-module .h1b {font-size: 2.5rem;}
+    .pm-list-main {flex-direction: column; padding: 12px 0 0 12px;}
+    .pm-list { width: 100%;}
+    .pm-wrap .heading { clear: both; padding: 0 0 20px;}
+    .pm-shadow { width: calc(100% + 12px); height: calc(100% + 12px); left: -12px; top: -12px; clip-path: var(--path-12); }
+
+    .pm-amt span {font-size: 2rem;}
+    .pm-list p{font-size: 12px; margin-bottom: 10px;}
+    .pm-list {padding: 16px 18px 16px 16px;}
+    .pm-list li {font-size: 12px; margin-bottom: 4px;}
+    .edition-type {margin: 0 0 14px 0;}
+
+    .pm-list ul { margin: 0 0 14px 8px; }
+
+    .pm-wrap .btn-full.hide-in-desktop{margin-top: 20px;} 
+
+}
