@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 jQuery(document).ready(function () {
 new Sticksy.initializeAll(
         '.sticky-widget',
@@ -12,3 +13,6 @@ new Sticksy.initializeAll(
     else stickyEl.nodeRef.classList.remove('widget--fixed')
 }
 });
+=======
+var sticky = new Sticky(".sticky-widget");
+>>>>>>> 0b982745afde5a16e83981eb4f882bcfd1dd68c6

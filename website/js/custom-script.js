@@ -10,7 +10,8 @@ jQuery(document).ready(function () {
   });
 
   /* Menu */
-  if (jQuery(window).width() <= 767) {
+
+  if (jQuery(window).width() <= 809) {
     jQuery(".toggle_button").on("click", function (event) {
       event.preventDefault();
       jQuery(this).toggleClass("active");
@@ -18,37 +19,20 @@ jQuery(document).ready(function () {
       jQuery(".main_header").toggleClass("menu-open");
       jQuery("html").toggleClass("no-scroll");
     });
-    jQuery("ul.main_menu > li").has("ul").addClass("menu-icon");
-    jQuery("ul.main_menu > li").has("ul ul").addClass("menu-icon3");
-
-    /* Level 1 Submenu */
-    jQuery("ul.main_menu > li.menu-icon > a").on("click", function (event) {
+    jQuery("ul.main_menu > li.menu-item-has-children > a").on("click", function (event) {
       event.preventDefault();
-      jQuery(this).toggleClass("toggle_icon");
-      jQuery(this).siblings("ul.sub-menu").toggleClass("sub-menu-open");
-      jQuery(this).parent().siblings("li").toggleClass("sib");
-
-      if (jQuery(this).siblings("ul.sub-menu").hasClass("sub-menu-open")) {
-        jQuery(".header_right").addClass("level-one-active");
-      } else {
-        jQuery(".header_right").removeClass("level-one-active");
-      }
+      jQuery('ul.main_menu > li.menu-item-has-children > a').not(jQuery(this)).removeClass('active');
+      jQuery(this).toggleClass("active");
+      jQuery(this).parent().siblings().find('ul.sub-menu').slideUp();
+      jQuery(this).next('ul.sub-menu').slideToggle();
+      jQuery(this).parent().siblings().toggleClass('sib');
     });
-
-    /* Level 2 Submenu */
-    jQuery("ul.main_menu > li > ul > li.menu-item-has-children > a").on("click", function (event) {
+    jQuery("ul.main_menu ul > li.menu-item-has-children > a").on("click", function (event) {
       event.preventDefault();
-      jQuery(this).parent().siblings("li").parent("ul.sub-menu").toggleClass("remove-margin");
-      jQuery(this).parent().siblings("li").parent("ul.sub-menu").siblings("a.toggle_icon").toggleClass("hide-level-two");
-      jQuery(this).toggleClass("toggle_icon3");
-      jQuery(this).siblings("ul.sub-menu").toggleClass("sub-menu-open-two");
-      jQuery(this).parent().siblings("li").toggleClass("sib2");
-
-      if (jQuery(this).siblings("ul.sub-menu").hasClass("sub-menu-open-two")) {
-        jQuery(".header_right").addClass("level-two-active");
-      } else {
-        jQuery(".header_right").removeClass("level-two-active");
-      }
+      jQuery('ul.main_menu ul > li.menu-item-has-children > a').not(jQuery(this)).removeClass('active');
+      jQuery(this).toggleClass("active");
+      jQuery(this).parent().siblings().find('ul.sub-menu').slideUp();
+      jQuery(this).siblings('ul.main_menu ul > li > ul.sub-menu').slideToggle();
     });
   }
 
