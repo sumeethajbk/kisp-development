@@ -386,9 +386,7 @@ html.no-scroll {overflow:hidden;}
     .btn-center .button {min-width:214px; margin: 0 8px;}
     
    
-    .custom_arrows_wc {position: absolute; left: 0; right: 0; margin: 0 auto; bottom: 5px;}
-    .custom_arrow.slick-arrow.slick-prev {right: auto; left: 24px;}
-    .custom_arrow.slick-arrow.slick-next {right: 24px; left: auto;}
+   
     
     
 }
