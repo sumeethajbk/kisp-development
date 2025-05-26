@@ -16,19 +16,43 @@
 
 /*-- media starts here --*/
 
-@media only screen and (max-width:1279px) and (min-width:810px) {
+@media only screen and (max-width:1439px) and (min-width:1024px) {
+.hero-banner-main {min-height: 600px;}
+.hero-banner-main .hero-banner-thumb { width: 46.89%; }
+.hero-banner-main .hero-banner-text { width: calc(100% - 50.5%); }
+.hero-banner-main .hero-banner-thumb {
+  clip-path: var(--path-148-1);}
+
 }
 
+@media only screen and (max-width: 1279px) and (min-width: 1024px){
+     .hero-banner-main .hero-banner-thumb { clip-path: var(--path-168); }
+    .hero-banner-main .hero-banner-thumb { width: 45.89%; }
+}
 @media only screen and (max-width: 1023px) and (min-width: 200px){
-    
-}
+.hero-banner-main {flex-direction: column; }
+    .hero-banner-main .hero-banner-thumb {width: 100%; }
+    .hero-banner-main .hero-banner-text {width: 100%;}
+    .hero-banner-main .hero-banner-text h1 br{display: none;}
 
+
+}
 @media only screen and (max-width: 1023px) and (min-width:768px){
-    
+    .hero-banner-main { gap: 64px;}
+    .hero-banner-main .hero-banner-thumb { height: 746px;}
+    .hero-banner-section .container { padding: 0 40px;}
+    .hero-banner-main .hero-banner-text {padding: 0 0 64px;}
+    .hero-banner-main .hero-banner-text h1 {font-size: 3rem;}
 }
 
 @media only screen and (max-width: 767px) and (min-width: 200px){
-   
-    
+    .hero-banner-section {padding: 20px 0 0;}
+    .hero-banner-section .container { padding: 0 20px;}
+    .hero-banner-main .hero-banner-thumb { clip-path: var(--path-80); }
+    .hero-banner-main { gap: 40px;}
+    .hero-banner-main .hero-banner-text {padding: 0 0 40px;}
+    .hero-banner-main .hero-banner-text h1{font-size: 2.5rem; margin-bottom: 12px;}
+    .hero-banner-main .hero-banner-text p{font-size: 1rem; margin-bottom: 10px; line-height: 1.5;}
+    .hero-banner-main .hero-banner-text .kisp-type {margin:  0 0 16px;}
 
 }
