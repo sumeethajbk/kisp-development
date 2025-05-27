@@ -27,7 +27,11 @@
 }
 
 @media only screen and (max-width:767px) and (min-width:200px) {
-   .cta-module .cta-main {width:100%; padding:20px 36px 20px 20px;} 
+    .cta-module {padding: 24px 0;}
+    .cta-module .container {padding: 0 20px;}
+   .cta-module .cta-main {width:100%; padding:22px 36px 36px 20px;} 
    .cta-module .h1 {letter-spacing:0.96px; font-size: 3rem; margin-bottom: 14px;}
+    .cta-btns-wrap {gap: 12px 0;}
+    .cta-btns-wrap span {font-size: 2.5rem; letter-spacing: 0.8px; margin: 0 12px;}
 
 }

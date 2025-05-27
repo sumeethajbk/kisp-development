@@ -63,7 +63,7 @@ jQuery(document).ready(function () {
   });
 
   /* Product Banner */
-  if (jQuery(window).width() >= 1024) {
+  if (jQuery(window).width() >= 768) {
     jQuery(".pb-slider-wrap").each(function () {
       const $wrap = jQuery(this);
       $wrap
@@ -93,30 +93,76 @@ jQuery(document).ready(function () {
       });
     });
   }
+    if (jQuery(window).width() <= 767) {
+      jQuery(".pb-slider-nav .pb-bg").css("background", "");
+      jQuery(".pb-slider-nav .pb-thumb-nav").css("color", "");
+
+      jQuery(".pb-slider-for").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: ".pb-slider-nav",
+      });
+      jQuery(".pb-slider-nav").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        asNavFor: ".pb-slider-for",
+        dots: false,
+        arrows: true,
+        variableWidth: true,
+        centerMode: true,
+        appendArrows: ".custom-arrows",
+        prevArrow: '<div class="slick-arrow slick-prev flex flex-center" aria-label="Previous Arrow" role="button"><span><i class="fa-sharp fa-regular fa-arrow-left"></i></span></div>',
+        nextArrow: '<div class="slick-arrow slick-next flex flex-center" aria-label="Next Arrow" role="button"><span><i class="fa-sharp fa-regular fa-arrow-right"></i></span></div>',
+        focusOnSelect: true,
+      });
+    }
+  
 
   /* Product Features */
   if (jQuery(window).width() >= 768) {
     jQuery(".pf-slider-wrap").each(function () {
       const $wrap = jQuery(this);
-      $wrap
-        .find(".pf-thumb:first")
-        .addClass("active")
-        .find(".pf-thumb-nav")
-        .addClass("open");
+
+      const $firstThumb = $wrap.find(".pf-thumb:first");
+      const firstBg = $firstThumb.attr("data-bg");
+      const $firstnav = $firstThumb.find(".pf-thumb-nav");
+      const firstTextColor = $firstnav.attr("data-color");
+
+      $firstThumb.css("background", firstBg);
+      $firstThumb.find(".pf-bg").css("background", firstBg);
+      $firstnav.css("color", firstTextColor);
+
+      $firstThumb.addClass("active");
+      $firstnav.addClass("open");
       $wrap.find(".pf-slide:first").addClass("active");
+
       $wrap.find(".pf-thumb-nav").on("click", function (e) {
         e.preventDefault();
         const $nav = jQuery(this);
         const data = $nav.data("name");
+        const textColor = $nav.data("color");
 
-        $nav
-          .parent()
-          .addClass("active")
-          .siblings()
-          .removeClass("active")
-          .find(".pf-thumb-nav")
-          .removeClass("open");
-        $nav.addClass("open");
+        const $currentThumb = $nav.closest(".pf-thumb");
+        const $allThumbs = $wrap.find(".pf-thumb");
+        const $allThumbNavs = $wrap.find(".pf-thumb-nav");
+        const $allThumbBgs = $wrap.find(".pf-bg");
+
+        // Reset all
+        $allThumbs.removeClass("active").css("background", "#FFFFFF");
+        $allThumbNavs.removeClass("open").css("color", "rgba(0,71,57,1)");
+        $allThumbBgs.css("background", "rgb(255 255 255 / 50%)");
+
+        // Activate current
+        $currentThumb.addClass("active");
+        $nav.addClass("open").css("color", textColor);
+
+        const newBg = $currentThumb.attr("data-bg");
+        $currentThumb.css("background", newBg);
+        $currentThumb.find(".pf-bg").css("background", newBg);
+
+        // Show slide
         $wrap
           .find(".pf-slide")
           .hide()

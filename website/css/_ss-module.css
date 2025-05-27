@@ -1,6 +1,6 @@
 .ss-module{clear: both; width: 100%; position: relative; z-index: 1; background: var(--white); padding: 80px 0;}
 .ss-module .h1 {margin-bottom: 36px;}
-.single-service-posts .ss-main {display: flex; flex-wrap: wrap; gap: 40px; width: 100%; padding: 0 0 40px 0; min-height: inherit; border: 0 none; background: transparent;}
+.single-service-posts .ss-main {display: flex; flex-wrap: wrap; gap: 40px; width: 100%; padding: 0 0 40px 0; min-height: inherit; border: 0 none; background: transparent; border-radius: 0;}
 .ss-txt {padding:40px 64px 53px 40px; width: 400px; position: relative; z-index: 1; display: flex; flex-wrap: wrap;}
 .ss-txt:before {clip-path:var(--path-ltbr-24); content: ""; background: var(--white); position: absolute; left: 0; top: 0; width: 100%; height: 100%; display: block; z-index: -1;}
 .ss-txt .ss-cnt {display: flex; flex-direction: column; flex-wrap: wrap; justify-content: flex-end; margin-top: auto;}
@@ -15,9 +15,10 @@
 
 .ss-row {justify-content: space-between; gap:40px;}
 
-.service-posts {clear: both; width: 100%;}
-.service-posts .ss-row:nth-child(odd) {flex-direction: row-reverse;}
-.service-posts .ss-row:nth-child(even) .ss-txt:before {transform: scale(-1, 1);}
+.ss-row-wrapper {clear: both; width: 100%; display: flex; flex-wrap: wrap; gap: 40px;}
+.ss-row-wrapper:first-child .ss-row .ss-txt:before {transform: none!important;}
+.ss-row-wrapper:nth-child(even) .ss-row {flex-direction: row-reverse;}
+.ss-row-wrapper:nth-child(odd) .ss-row .ss-txt:before {transform: scale(-1, 1);}
 
 @media only screen and (min-width: 1024px) {
 }

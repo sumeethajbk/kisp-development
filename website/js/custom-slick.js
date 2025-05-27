@@ -66,6 +66,7 @@ jQuery(document).ready(function () {
       speed: 1000,
       dots: false,
       arrows: true,
+        adaptiveHeight:true,
       fade:true,
         prevArrow: '<div class="slick-arrow slick-prev flex flex-center" aria-label="Previous Arrow" role="button"><span><i class="fa-sharp fa-regular fa-arrow-left"></i></span></div>',
     nextArrow: '<div class="slick-arrow slick-next flex flex-center" aria-label="Next Arrow" role="button"><span><i class="fa-sharp fa-regular fa-arrow-right"></i></span></div>',

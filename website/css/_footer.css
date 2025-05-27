@@ -73,6 +73,7 @@ footer#main_footer .footer_btm .ftr-btm-rt .ftr-btm-btns ul li a:hover {color: v
 
 @media only screen and (max-width:767px) and (min-width:200px) {  
     footer#main_footer {padding: 40px 0;}
+    footer#main_footer .container {padding-right: 20px;}
     footer#main_footer .footer_top {min-height: 316px; top: -104px; margin:0 0 -64px 0;}
     footer#main_footer .footer_top .background-bg {clip-path:polygon(0 100%, 45% 100%, 100% 71%, 100% 0, 0 0, 0 76%);}
     footer#main_footer .footer_lt {position: relative; width: 100%; min-height: 316px; display: flex; flex-wrap: wrap;}
