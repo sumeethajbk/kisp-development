@@ -192,6 +192,8 @@ audio::-webkit-media-controls-enclosure {border-radius: 0; background: transpare
 /* Kisp Type */
 .kisp-type {display: flex; flex-wrap: wrap; align-items: center; gap:8px; font-weight: 700; font-size: 1rem; line-height: 1.2; margin: 0 0 21px 0; min-height: 40px;}
 .kisp-type span {padding:10.4px 16.5px; background: var(--base-foreground); color: var(--white); border-radius: 20px; text-transform: uppercase;}
+.kisp-type a {display: flex; flex-wrap: wrap; align-items: center; gap:8px;}
+
 
 /* Default Slick navigations */
 .slick-arrow{top:0;  right: 0; position: absolute; display: flex!important; align-items: center; justify-content: center; cursor: pointer; transition: all 0.3s ease-in-out; z-index: 2; line-height: normal; width: 35px; height: 40px;bottom: inherit; margin: auto; color: var(--brand-blue); bottom: 0;}
@@ -253,7 +255,7 @@ body ul.selectBox-dropdown-menu li.selectBox-selected a, body ul.selectBox-dropd
 
 
 /* Input */
-.frm_forms .frm_form_fields input, .frm_forms .frm_form_fields textarea, .frm_forms .frm_form_fields select {font-family: "FK Grotesk Neue", sans-serif; font-weight: bold; display: block; font-size: 1rem; line-height: 100%; font-style: normal; vertical-align: middle; -webkit-appearance: none; background-color: transparent!important; color: var(--brand-blue)!important; border:1px solid var(--brand-green)!important; padding:15px 16px 16px; width: 100%; box-shadow: none; transition-duration: .75s; transition-property: all; transition-timing-function: cubic-bezier(.075,.82,.165,1);}
+.frm_forms .frm_form_fields input, .frm_forms .frm_form_fields textarea, .frm_forms .frm_form_fields select {font-family: "FK Grotesk Neue", sans-serif; font-weight: bold; display: block; font-size: 1rem; line-height: 100%; font-style: normal; vertical-align: middle; -webkit-appearance: none; background-color: transparent!important; color: var(--brand-blue)!important; border:1px solid var(--brand-green)!important; padding:15px 16px 16px; width: 100%; box-shadow: none; transition-duration: .75s; transition-property: all; transition-timing-function: cubic-bezier(.075,.82,.165,1); border-radius: 0;}
 body .frm_forms .frm_form_fields input:focus, body .frm_forms .frm_form_fields textarea:focus, body .frm_forms .frm_form_fields input:hover, body .frm_forms .frm_form_fields textarea:hover {box-shadow:none!important; color: var(--brand-blue)!important; border-color: var(--brand-mint)!important;}
 .frm_forms .frm_form_fields select {color: var(--brand-green)!important;}
 
@@ -264,7 +266,7 @@ body .frm_forms .frm_form_fields input:focus, body .frm_forms .frm_form_fields t
 
 /* Form Button */
 .frm_forms .frm_submit{margin:0;}
-body .frm_forms .frm_submit .button, body .frm_forms .frm_submit button {margin: 0 !important;; vertical-align: middle!important; cursor: pointer!important; background-color: var(--base-foreground)!important; position: relative; transition: all .3s ease-in-out; -webkit-transition: all .3s ease-in-out; -moz-transition: all .5s ease-in-out; text-align: center!important; color: var(--white)!important; font-family: "FK Grotesk Neue", sans-serif; text-decoration: none; display: inline-block; font-size:1rem; font-weight: bold; line-height: 100%; padding:16px!important; width: 100%!important;}
+body .frm_forms .frm_submit .button, body .frm_forms .frm_submit button {margin: 0 !important;; vertical-align: middle!important; cursor: pointer!important; background-color: var(--base-foreground)!important; position: relative; transition: all .3s ease-in-out; -webkit-transition: all .3s ease-in-out; -moz-transition: all .5s ease-in-out; text-align: center!important; color: var(--white)!important; font-family: "FK Grotesk Neue", sans-serif; text-decoration: none; display: inline-block; font-size:1rem!important; font-weight: bold!important; line-height: 100%!important; padding:16px!important; width: 100%!important; border-radius: 0 !important; border: 0 none !important;}
 body .frm_forms .frm_submit .button:hover, body .frm_forms .frm_submit button:hover, body .frm_forms .frm_submit button:focus {color: var(--white)!important; background-color: var(--base-foreground)!important; transform: translate(4px, -4px); box-shadow: -4px 4px 0px 0px var(--brand-mint), -3px 3px 0px 0px var(--brand-mint), -2px 2px 0px 0px var(--brand-mint), -1px 1px 0px 0px var(--brand-mint);}
 
 
@@ -283,8 +285,8 @@ body .frm_forms .frm_submit .button:hover, body .frm_forms .frm_submit button:ho
 
 /* Success Message */
 .frm_forms .frm_error_style {display: none;}
-.frm_forms .frm_message, .frm_forms .frm_success_style {margin: 0 0 20px 0; padding: 0; background: top; border: 0 none; font-weight: bold; font-size: 1rem; line-height: 1.5;}
-.frm_forms .frm_message p {color: var(--base-foreground); text-align: center; padding: 0 25px; font-size: 2rem; line-height: 1; margin-bottom: 0;}
+.frm_forms .frm_message, .frm_forms .frm_success_style {margin: 20px 0 0; background: top; border: 0 none; font-weight: bold; font-size: 1rem; line-height: 1.5;}
+.frm_forms .frm_message p {color: var(--base-foreground); text-align: center; font-size: 1rem; line-height: 1.5; margin-bottom: 0;}
 
 .default_form {background: var(--white); clear: both; width:100%; padding: 40px 39px; margin: 40px 0;}
 

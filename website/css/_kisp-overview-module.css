@@ -7,7 +7,7 @@
 .ko-shadow {width: calc(100% + 24px); height: calc(100% + 24px); display: block; background: var(--brand-mint); z-index: -1; left: -24px; top: -24px; clip-path: var(--path-24);}
 
 .ko-list .kisp-type {margin: 0 0 24px 0;}
-.ko-list p{margin-bottom: 20px; font-size: 0.875rem; max-width: 200px;}
+.ko-list p{margin-bottom: 20px; font-size: 0.875rem;}
 .ko-list .inline-underline-wrp .inline-underline {bottom:0;}
 
 @media only screen and (min-width:1280px) {

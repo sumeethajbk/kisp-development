@@ -35,8 +35,8 @@
     .testimonial-module {padding: 40px 0 108px;}
     .testimonial-module .slick-list {padding: 0 16px 0 0;}
     .testimonial-module .slick-arrow {top: inherit; bottom:-68px; left: 0; right: 0; height: 48px;} 
-    .testimonial-module .slick-arrow.slick-prev {left: -102px; right: 0;}
-    .testimonial-module .slick-arrow.slick-next {left: 0; right: -63px;}
+    .testimonial-module .slick-arrow.slick-prev {left:-85px; right: 0;}
+    .testimonial-module .slick-arrow.slick-next {left: 0; right:-84px;}
     .testimonial-module .slick-arrow.slick-next:before {content: ""; position: absolute; left:-26px; bottom: 0; background-color:var(--base-elevated); width: 2px; height: 48px;} 
     .testimonial-module .slick-arrow span i {font-size: 3rem;}
     .testmonial-txt {padding: 20px 18px 36px 20px;}

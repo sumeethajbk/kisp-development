@@ -7,7 +7,7 @@
 
 
 /* CTA Form */
-.cta-form .frm_forms .frm_filed_wrapper {flex-direction: row-reverse;}
+.cta-form .frm_forms .frm_filed_wrapper {font-size: 1rem; line-height: 1.4;}
 
 
 @media only screen and (max-width:1280px) and (min-width:1024px) {
