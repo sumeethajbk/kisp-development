@@ -48,6 +48,7 @@
 @media only screen and (max-width: 767px) and (min-width: 200px){
     .hero-banner-section {padding: 20px 0 0;}
     .hero-banner-section .container { padding: 0 20px;}
+    .hero-banner-section .optional-text {margin: 0 0 14px 0;}
     .hero-banner-main .hero-banner-thumb { clip-path: var(--path-80); }
     .hero-banner-main { gap: 40px;}
     .hero-banner-main .hero-banner-text {padding: 0 0 40px;}
