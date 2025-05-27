@@ -5,7 +5,7 @@
 @import url("_blog-feature-module.css");
 @import url("_cta-module.css");
 
-.product-banner {position: relative; clear: both; width: 100%; z-index: 1; background: var(--brand-green); padding: 36px 0 80px;}
+.product-banner {position: relative; clear: both; width: 100%; z-index: 1; background: var(--brand-green); padding:80px 0;}
 .product-banner h1 {color: var(--brand-mint); margin-bottom: 14px;}
 .pb-slider-wrap {display:flex; flex-wrap:wrap; width:100%; justify-content:space-between; flex-direction:row-reverse; gap:80px;}
 

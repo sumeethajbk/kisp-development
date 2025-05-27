@@ -43,7 +43,7 @@
 
 @media only screen and (max-width:767px) and (min-width:200px) {
    .kisp-pm {padding: 40px 0;}
-    .kisp-pm-main { gap:  32px; padding: 16px; flex-direction: column; }
+    .kisp-pm-main { gap: 36px; padding: 16px; flex-direction: column; }
     .kisp-pm .h1{font-size: 3rem; margin-bottom: 25px; }
     .kisp-shadow { width: calc(100% + 16px); height: calc(100% + 16px); left: -16px; top: -16px; clip-path: var(--path-24);}
     .kisp-pm-grid {padding: 20px; width: calc(100% + 16px); margin-left: 0;}

@@ -52,7 +52,9 @@
 @media only screen and (max-width: 767px) and (min-width: 200px){
      .kisp-pm { padding: 40px 0 0 0!important; }
     .trusted-by { padding: 80px 0; }
-    
+
+    .featurette-lt .h1b { max-width: 185px; }
+    .featurette-single:nth-child(2n) .featurette-lt .h1b { max-width: 185px; }
     
 }
 
