@@ -1,4 +1,4 @@
-.trusted-by {position: relative; width: 100%; background: var(--white); padding: 80px 0; clear: both;}
+.trusted-by {position: relative; width: 100%; background: var(--white); padding: 85px 0 80px; clear: both;}
 .trusted-by-wrap {padding: 20px 0 0 0;}
 .trusted-by-main {gap:40px; justify-content: space-between;}
 .trusted-grid {width: 48.4375%; display: inline-block; padding: 40px; box-sizing: border-box; position: relative; z-index: 1; flex-grow: 1;}
@@ -20,6 +20,9 @@
 
 .trusted-by.no-clip {background: var(--base-elevated); padding: 40px 0;}
 .trusted-by.no-clip .trusted-grid .trusted-grid-bg {clip-path: inherit; background: var(--white);}
+
+.trusted-by .h1{margin-bottom: 24px;}
+
 
 @media only screen and (max-width: 1400px) and (min-width: 1024px) {
     .trusted-grid {width: 47.438%;}

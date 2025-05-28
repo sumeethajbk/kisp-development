@@ -5,12 +5,12 @@
 @import url("_blog-feature-module.css");
 @import url("_cta-module.css");
 
-.product-banner {position: relative; clear: both; width: 100%; z-index: 1; background: var(--brand-green); padding:80px 0;}
+.product-banner {position: relative; clear: both; width: 100%; z-index: 1; background: var(--brand-green); padding: 36px 0 80px;}
 .product-banner h1 {color: var(--brand-mint); margin-bottom: 14px;}
 .pb-slider-wrap {display:flex; flex-wrap:wrap; width:100%; justify-content:space-between; flex-direction:row-reverse; gap:80px;}
 
 .pb-rt {width:calc(100% - 480px);}
-.pb-lt {width:400px; padding:94px 0 0; display: flex; flex-wrap: wrap; align-items: center; flex-grow: 1;}
+.pb-lt {width:400px; padding:150px 0 0; display: flex; flex-wrap: wrap; align-items: center; flex-grow: 1;}
 .pb-lt .pb-nav {margin: 39px 0 0 0; clear: both; width: 100%; max-width: 322px;}
 .pb-txt p {color: var(--brand-mint);}
 .pb-slide {position: relative; display: none;}
