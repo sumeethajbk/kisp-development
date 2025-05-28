@@ -8,6 +8,7 @@
 .hero-banner-main .hero-banner-text {clear: both; width: calc(100% - 50%); padding:80px 70px 80px 80px; display: flex; align-items: flex-end; flex-wrap: wrap;}
 .hero-banner-main .hero-banner-text .kisp-type {color:var(--brand-mint); margin: 0 0 22px 0;}
 .hero-banner-main .hero-banner-text .kisp-type span {background: var(--brand-mint); color: var(--brand-green);}
+.hero-banner-main .hero-banner-text .kisp-type:not(:has(span)) {min-height: inherit;}
 .hero-banner-main .hero-banner-text h1 {color: var(--brand-mint); margin-bottom: 18px;}
 .hero-banner-main .hero-banner-text p {color: var(--brand-mint); margin-bottom: 24px;}
 

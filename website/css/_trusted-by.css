@@ -18,11 +18,10 @@
 .trusted-by-wrap .logo-slider {padding: 0 0 40px 0;}
 .trusted-by-wrap .logo-slider:only-child {padding-bottom: 0;}
 
-.trusted-by.no-clip {background: var(--base-elevated); padding: 40px 0;}
+.trusted-by.no-clip {background: var(--base-elevated); padding:45px 0 40px 0;}
 .trusted-by.no-clip .trusted-grid .trusted-grid-bg {background: var(--white);}
 
 @media only screen and (min-width: 1024px) {
-.trusted-by.no-clip .trusted-grid .trusted-grid-bg {clip-path: inherit;}
 }
 
 .trusted-by .h1{margin-bottom: 24px;}
