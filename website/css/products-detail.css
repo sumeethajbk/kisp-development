@@ -32,6 +32,8 @@
 .pf-thumb .pf-thumb-nav .if-icon svg {width: 100%; height: 100%; fill:var(--brand-blue); filter: drop-shadow(2px 2px 0 var(--brand-mint));}
 .pf-thumb.active .pf-thumb-nav .if-icon svg {fill:var(--white); filter: none;}
 
+
+.pf-thumb-nav figure{ right: 12px; position: absolute;}
 /*-- media css starts here --*/
 @media only screen and (min-width:1024px){
   .pf-thumb {margin: 0 0 36px 0; clear: both; width: 100%; transition: all 0.5s ease-in-out; background: var(--white);}

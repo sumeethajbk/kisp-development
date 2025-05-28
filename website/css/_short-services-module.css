@@ -7,12 +7,12 @@
 .ss-grid .ss-thumb {position: absolute; left: 0; top: 0; width: 100%; height: 100%;}
 .ss-grid.ss-txt .ss-cnt {align-content: space-between;}
 .ss-grid .ss-cnt {padding: 40px; clear: both; width: 100%; display: flex; flex-wrap: wrap; height: 100%; }
-.ss-grid .ss-cnt .optional-text {color: var(--base-foreground);  margin: 0 0 40px 0;}
+.ss-grid .ss-cnt .optional-text {  margin: 0 0 40px 0;}
 .ss-grid .ss-cnt .h1 {margin-bottom: 16px;}
 .ss-grid .ss-cnt > p {font-size: 1rem; line-height: 1.5; color: var(--brand-green);}
 .ss-grid .ss-cnt .btn-shadow-wrp {margin-top: auto; }
 .ss-grid.ss-txt .ss-cnt {align-items: flex-start;}
-.ss-grid .ss-cnt .ss-cnt-ftr{padding-top: 40px;}
+.ss-grid .ss-cnt .ss-cnt-ftr{padding-top: 40px; margin-left: auto;}
 
 .ss-overlay-bg {width: 100%; height: 100%; top: 0; left: 0; display: block; opacity: 0.75; position: absolute;}
 .ss-overlay {position: absolute; top: 0; left: 0; width:100%; height: 100%; display: flex; align-items: center; right: 0; bottom: 0; margin: auto; flex-direction: column; opacity: 0; transition: opacity 0.5s ease; box-sizing: border-box; z-index: 1;}
