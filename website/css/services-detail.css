@@ -10,7 +10,7 @@
 
 
 /* Process Section */
-.process-card{width: 300px;}
+.process-card{width: 300px; flex-grow: 1;}
 .process-card .optional-text {margin: 0 0 22px 0;}
 .process-card h2 {margin-bottom: 42px;}
 

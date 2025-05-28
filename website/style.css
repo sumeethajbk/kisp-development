@@ -193,7 +193,7 @@ audio::-webkit-media-controls-enclosure {border-radius: 0; background: transpare
 .kisp-type {display: flex; flex-wrap: wrap; align-items: center; gap:8px; font-weight: 700; font-size: 1rem; line-height: 1.2; margin: 0 0 21px 0; min-height: 40px;}
 .kisp-type span {padding:10.4px 16.5px; background: var(--base-foreground); color: var(--white); border-radius: 20px; text-transform: uppercase;}
 .kisp-type a {display: flex; flex-wrap: wrap; align-items: center; gap:8px;}
-
+.kisp-type a:hover {color: var(--brand-green);}
 
 /* Default Slick navigations */
 .slick-arrow{top:0;  right: 0; position: absolute; display: flex!important; align-items: center; justify-content: center; cursor: pointer; transition: all 0.3s ease-in-out; z-index: 2; line-height: normal; width: 35px; height: 40px;bottom: inherit; margin: auto; color: var(--brand-blue); bottom: 0;}
@@ -230,7 +230,7 @@ body ul.selectBox-dropdown-menu li.selectBox-selected a, body ul.selectBox-dropd
 
 /*-- common form css starts here --*/
 .frm_forms.frm_style_formidable-style.with_frm_style .frm_form_fields .frm_fields_container {display: block;}
-.frm_forms.frm_style_formidable-style.with_frm_style .frm_form_fields .frm_form_field .frm_error {right:0 !important; width:100%; display:block; font-size:12px !important; color:#f00 !important; background:transparent; padding:0; margin:0; border-radius:0; text-align:right !important; line-height:normal !important; font-weight:400; top: auto; bottom: -19px; position:absolute;}
+.frm_forms.frm_style_formidable-style.with_frm_style .frm_form_fields .frm_form_field .frm_error {right:0 !important; width:100%; display:block; font-size:12px !important; color:#f00 !important; background:transparent; padding:0; margin:0; border-radius:0; text-align:right !important; line-height:normal !important; font-weight:400; top: auto; bottom: -17px; position:absolute;}
 .frm_forms .frm_form_fields fieldset {margin:0; padding:0; border:0;}
 .frm_forms .frm_form_fields .frm_form_field{margin-bottom:20px; position: relative; clear: both;}
 .frm_forms .frm_form_fields .frm_form_field.frm_full {clear:both; width: 100%;}
@@ -255,14 +255,16 @@ body ul.selectBox-dropdown-menu li.selectBox-selected a, body ul.selectBox-dropd
 
 
 /* Input */
-.frm_forms .frm_form_fields input, .frm_forms .frm_form_fields textarea, .frm_forms .frm_form_fields select {font-family: "FK Grotesk Neue", sans-serif; font-weight: bold; display: block; font-size: 1rem; line-height: 100%; font-style: normal; vertical-align: middle; -webkit-appearance: none; background-color: transparent!important; color: var(--brand-blue)!important; border:1px solid var(--brand-green)!important; padding:15px 16px 16px; width: 100%; box-shadow: none; transition-duration: .75s; transition-property: all; transition-timing-function: cubic-bezier(.075,.82,.165,1); border-radius: 0;}
+.frm_forms .frm_form_fields input, .frm_forms .frm_form_fields textarea, .frm_forms .frm_form_fields select {font-family: "FK Grotesk Neue", sans-serif; font-weight: bold; display: block; font-size: 1rem; line-height: 100%; font-style: normal; vertical-align: middle; -webkit-appearance: none; background-color: transparent!important; color: var(--brand-blue)!important; border:1px solid var(--brand-green)!important; padding:14px 16px 14px; width: 100%; box-shadow: none; transition-duration: .75s; transition-property: all; transition-timing-function: cubic-bezier(.075,.82,.165,1); border-radius: 0;}
 body .frm_forms .frm_form_fields input:focus, body .frm_forms .frm_form_fields textarea:focus, body .frm_forms .frm_form_fields input:hover, body .frm_forms .frm_form_fields textarea:hover {box-shadow:none!important; color: var(--brand-blue)!important; border-color: var(--brand-mint)!important;}
 .frm_forms .frm_form_fields select {color: var(--brand-green)!important;}
 
 .frm_forms .frm_form_fields textarea {min-height:160px; padding: 17px;}
 
-.frm_forms .frm_form_fields .selectBox-dropdown{background-color: transparent; color: var(--brand-green); border:solid 1px var(--brand-green); padding:15px 46px 16px 16px; font-family: "FK Grotesk Neue", sans-serif; font-weight: 700; text-transform: none;}
+.frm_forms .frm_form_fields .selectBox-dropdown{background-color: transparent; color: var(--brand-green); border:solid 1px var(--brand-green); padding:14px 46px 14px 16px; font-family: "FK Grotesk Neue", sans-serif; font-weight: 700; text-transform: none;}
 .frm_forms .frm_form_fields .selectBox-dropdown:focus, .frm_forms .frm_form_fields .selectBox-dropdown:hover {border-color: var(--brand-mint);}
+
+body .frm_forms .frm_form_fields input.input-has-value, body .frm_forms .frm_form_fields textarea.input-has-value {border:1px solid transparent!important; box-shadow: 6px 6px 0px 0px #3364FA, 5px 5px 0px 0px var(--brand-blue), 4px 4px 0px 0px var(--brand-blue), 3px 3px 0px 0px var(--brand-blue), 2px 2px 0px 0px var(--brand-blue), 1px 1px 0px 0px var(--brand-blue)!important;}
 
 /* Form Button */
 .frm_forms .frm_submit{margin:0;}
@@ -271,9 +273,9 @@ body .frm_forms .frm_submit .button:hover, body .frm_forms .frm_submit button:ho
 
 
 .frm_forms .frm_filed_wrapper {gap: 16px; justify-content: space-between;}
-.frm_forms .frm_filed_wrapper .frm_form_field {margin: 0;}
+.frm_forms .frm_filed_wrapper .frm_form_field {margin: 0!important;}
 .frm_forms .frm_filed_wrapper .disclaimer {opacity: 0.45;}
-
+.frm_forms .frm_filed_wrapper .frm_html_container {font-size: 1rem; line-height: 1.4; text-align: right;}
 
 
 /* Form Field */
@@ -331,6 +333,13 @@ html.no-scroll {overflow:hidden;}
 
 @media only screen and (max-width: 1280px) and (min-width: 200px) {
     .cat-wrap ul li {font-size: 0.75rem;}  
+    .frm_forms .frm_form_fields input, .frm_forms .frm_form_fields textarea, .frm_forms .frm_form_fields select {padding: 13px 16px 13px;}
+    .frm_forms .frm_filed_wrapper .frm_html_container {font-size:0.875rem; line-height: 1.4;}
+
+    body .selectBox-dropdown {font-size: 0.875rem;}
+    body .selectBox-dropdown .selectBox-arrow {font-size: 0.875rem;}
+    
+    
 }
 
 @media only screen and (max-width: 1023px) and (min-width: 810px) {
@@ -354,6 +363,12 @@ html.no-scroll {overflow:hidden;}
     .h1, .h1b {font-size: 3rem; letter-spacing: 0.96px;}
     
     .heading {padding: 0 0 32px;}
+    
+    .frm_forms .frm_form_fields .frm_form_field {margin-bottom: 16px;}
+    .frm_forms.frm_style_formidable-style.with_frm_style .frm_form_fields .frm_form_field .frm_error {bottom: -16px;}
+    .frm_first {margin-right: 16px;}
+    .frm_half {width: calc(50% - 8px);}
+
   
     
 }
@@ -380,25 +395,17 @@ html.no-scroll {overflow:hidden;}
     body .mfp-container { padding-left: 20px; padding-right: 20px; }
 
 
-    .frm_forms.frm_style_formidable-style.with_frm_style .frm_form_fields .frm_fields_container{display: block;}
-    body .frm_forms .frm_submit .button, body .frm_forms .frm_submit button {width: 100%;}
-    .frm-wrapper .frm_submit {width: 100%;}
-    .frm_forms.with_frm_style .frm_checkbox input[type="checkbox"], .frm_forms.frm_style_formidable-style.with_frm_style .frm_form_fields .frm_form_field input[type="checkbox"] {width: 28px!important; height: 28px!important; top: calc(50% - 1px); margin: 0; transform: translateY(-50%);}
-    .frm_forms.with_frm_style .frm_checkbox input[type="checkbox"]:checked::before {position: absolute!important; top: 4px; font-size: 14px;}
-     .with_frm_style .frm-wrapper .vertical_radio .frm_checkbox{margin-bottom: 0;}
-    .frm_forms.with_frm_style .frm_checkbox label {padding-left: 40px; line-height: 1;}
-    .frm_forms .frm_form_fields .frm-wrapper .frm_form_field {padding: 0;}
+    .frm_half {width: 100%;}
+    .frm_forms .frm_filed_wrapper {gap: 13px;}
+    .frm_forms .frm_form_fields .frm_form_field {margin-bottom: 12px;}
+    .frm_forms .frm_filed_wrapper .frm_form_field {width: 100%; margin: 0;}
+    .frm_forms .frm_filed_wrapper .frm_form_field .button {width: 100%;}
+    .frm_forms .frm_filed_wrapper .frm_html_container {text-align: center;}
+    .frm_forms.frm_style_formidable-style.with_frm_style .frm_form_fields .frm_form_field .frm_error {bottom: -12px; line-height: 1;}
     
-    
-    
-    
+
     .btn-center {margin: 40px 0 0 0;}
-    .btn-center .button {min-width:214px; margin: 0 8px;}
-    
-   
-   
-    
-    
+    .btn-center .button {min-width:214px; margin: 0 8px;}   
 }
 
 @media only screen and (max-width:480px) {   

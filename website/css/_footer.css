@@ -15,7 +15,8 @@ footer#main_footer .ftr-sm ul {margin: 0}
 footer#main_footer .ftr-sm ul li {display: inline-block; margin: 16px 16px 0 0}
 footer#main_footer .ftr-sm ul li:before {display: none;}
 footer#main_footer .ftr-sm ul li:last-child {margin-right: 0}
-footer#main_footer .ftr-sm ul li a {width:64px; height: 64px; position: relative; z-index: 1;  display: block; color: var(--brand-mint); font-size: 2rem; line-height: 64px; text-align: center;}
+footer#main_footer .ftr-sm ul li a {width:64px; height: 64px; position: relative; z-index: 1;  display: block; color: var(--brand-mint); text-align: center; font-size: 0;}
+footer#main_footer .ftr-sm ul li a i {font-size: 2rem; line-height: 64px;}
 footer#main_footer .ftr-sm ul li a:hover {background-color: var(--brand-mint); color: var(--brand-green);}
 footer#main_footer .ftr-sm ul li a span {text-indent: -999999px; display: inline-block;}
 

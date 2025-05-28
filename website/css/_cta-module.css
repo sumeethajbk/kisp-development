@@ -7,7 +7,6 @@
 
 
 /* CTA Form */
-.cta-form .frm_forms .frm_filed_wrapper {font-size: 1rem; line-height: 1.4;}
 
 
 @media only screen and (max-width:1280px) and (min-width:1024px) {
@@ -33,5 +32,7 @@
    .cta-module .h1 {letter-spacing:0.96px; font-size: 3rem; margin-bottom: 14px;}
     .cta-btns-wrap {gap: 12px 0;}
     .cta-btns-wrap span {font-size: 2.5rem; letter-spacing: 0.8px; margin: 0 12px;}
+    
+    
 
 }
