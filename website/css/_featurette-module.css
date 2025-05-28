@@ -5,7 +5,7 @@
 .featurette-lt .featurette-cnt {display: flex; flex-wrap: wrap;  height: 100%; padding: 42px 40px 39px 40px; align-content: space-between;}
 .featurette-lt .h1b {color: var(--base-foreground); margin-bottom: 18px;}
 .featurette-lt:only-child .h1b {max-width: 100%;}
-.featurette-lt .kisp-type {margin: 0 0 40px 0;}
+.featurette-lt .kisp-type {margin:0 0 28px 0;}
 .featurette-lt p {font-size: 1rem; line-height: 1.5;}
 
 .featurette-rt {padding: 40px; flex: 1; position: relative;}

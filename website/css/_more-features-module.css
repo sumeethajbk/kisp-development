@@ -1,7 +1,7 @@
 .more-features-module {background-color: var(--base-elevated); clear: both; width: 100%; position: relative; z-index: 1; padding: 82px 0 81px 0;}
 .more-features-module .h1b {margin-bottom: 0;}
 .mf-list-main{gap: 24px; margin: 2px auto 0 auto;}
-.mf-list {width:23.515625%; background: var(--white); padding: 38px 40px 40px 40px;}
+.mf-list {width:23.515625%; background: var(--white); padding: 38px 40px 38px 40px;}
 .mf-list .h5 {margin-bottom: 10px;}
 .mf-list .h5 a {color: var(--heading);}
 .mf-list .h5 a:hover {color: var(--base-foreground);}
@@ -19,7 +19,7 @@
 
 }
 
-@media only screen and (min-width:1280px) {
+@media only screen and (max-width:1280px) {
     .mf-list p {font-size: 0.75rem;}
 
 }
