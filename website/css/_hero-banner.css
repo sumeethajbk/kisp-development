@@ -25,6 +25,11 @@
   clip-path: var(--path-140);}
 
 }
+@media only screen and (max-width:1199px) and (min-width:1024px) {
+    .hero-banner-main{gap: 0}
+    .hero-banner-main .hero-banner-text { padding-right: 20px; }
+
+}
 
 
 
