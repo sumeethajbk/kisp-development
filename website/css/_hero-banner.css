@@ -16,19 +16,17 @@
 
 /*-- media starts here --*/
 
-@media only screen and (max-width:1439px) and (min-width:1024px) {
+@media only screen and (max-width:1280px) and (min-width:1024px) {
 .hero-banner-main {min-height: 600px;}
 .hero-banner-main .hero-banner-thumb { width: 46.89%; }
 .hero-banner-main .hero-banner-text { width: calc(100% - 50.5%); }
 .hero-banner-main .hero-banner-thumb {
-  clip-path: var(--path-148-1);}
+  clip-path: var(--path-140);}
 
 }
 
-@media only screen and (max-width: 1279px) and (min-width: 1024px){
-     .hero-banner-main .hero-banner-thumb { clip-path: var(--path-168); }
-    .hero-banner-main .hero-banner-thumb { width: 45.89%; }
-}
+
+
 @media only screen and (max-width: 1023px) and (min-width: 200px){
 .hero-banner-main {flex-direction: column; }
     .hero-banner-main .hero-banner-thumb {width: 100%; }
