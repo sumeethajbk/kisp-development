@@ -8,7 +8,15 @@ jQuery(document).ready(function () {
       jQuery(".main_header").removeClass("fixed-header");
     }
   });
-
+  jQuery(window).on('scroll', function () {
+    if (jQuery('.main_header').hasClass('fixed-header')) {
+      jQuery('.topbar').removeClass('on');
+    } else {
+      jQuery('.topbar').addClass('on');
+    }
+  });
+    
+    
   /* Menu */
 
   if (jQuery(window).width() <= 809) {
@@ -136,7 +144,7 @@ jQuery(document).ready(function () {
 
       $firstThumb.addClass("active");
       $firstnav.addClass("open");
-      $wrap.find(".pf-slide:first").addClass("active");
+      $wrap.find(".pf-slide[data-image='1']").addClass("active");
 
       $wrap.find(".pf-thumb-nav").on("click", function (e) {
         e.preventDefault();
@@ -205,6 +213,26 @@ jQuery(document).ready(function () {
       jQuery(this).addClass('input-has-value');
     } else {
       jQuery(this).removeClass('input-has-value');
+    }
+  });
+
+
+  jQuery(".frm_forms .frm_form_fields input, .frm_forms .frm_form_fields textarea").on('focus', function () {
+    jQuery(this).siblings(".frm_form_field").addClass("input-has-value");
+    jQuery(this).parent(".frm_form_field ").removeClass("frm_blank_field");
+
+    jQuery(this).siblings(".frm_error").hide();
+  }).on('blur', function () {
+    if (!jQuery(this).val()) {
+      jQuery(this).siblings(".frm_form_field").removeClass("input-has-value");
+      jQuery(this).siblings(".frm_error").show();
+      jQuery(this).parent(".frm_form_field ").addClass("frm_blank_field");
+
+    } else {
+      jQuery(this).siblings(".frm_form_field").addClass("input-has-value");
+      jQuery(this).parent(".frm_form_field ").removeClass("frm_blank_field");
+
+      jQuery(this).siblings(".frm_error").hide();
     }
   });
 

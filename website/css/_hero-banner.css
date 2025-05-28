@@ -27,7 +27,9 @@
 }
 @media only screen and (max-width:1199px) and (min-width:1024px) {
     .hero-banner-main{gap: 0}
-    .hero-banner-main .hero-banner-text { padding-right: 20px; }
+    .hero-banner-main .hero-banner-text { padding-right: 20px;}
+    .hero-banner-main .hero-banner-thumb { width: 50%; }
+.hero-banner-main .hero-banner-text { width: calc(100% - 50%); }
 
 }
 
@@ -57,7 +59,7 @@
     .hero-banner-main { gap: 40px;}
     .hero-banner-main .hero-banner-text {padding: 0 0 40px;}
     .hero-banner-main .hero-banner-text h1{font-size: 2.5rem; margin-bottom: 12px;}
-    .hero-banner-main .hero-banner-text p{font-size: 1rem; margin-bottom: 10px; line-height: 1.5;}
+    .hero-banner-main .hero-banner-text p{font-size: 1rem; margin-bottom: 16px; line-height: 1.5;}
     .hero-banner-main .hero-banner-text .kisp-type {margin:  0 0 16px;}
 
 }

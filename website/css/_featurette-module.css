@@ -5,7 +5,8 @@
 .featurette-lt .featurette-cnt {display: flex; flex-wrap: wrap;  height: 100%; padding: 42px 40px 39px 40px; align-content: space-between;}
 .featurette-lt .h1b {color: var(--base-foreground); margin-bottom: 18px;}
 .featurette-lt:only-child .h1b {max-width: 100%;}
-.featurette-lt .kisp-type {margin:0 0 28px 0;}
+.featurette-lt .kisp-type {margin:0 0 40px 0;}
+.featurette-lt .kisp-type:not(:has(span)) {min-height: inherit; margin:0 0 28px 0;}
 .featurette-lt p {font-size: 1rem; line-height: 1.5;}
 
 .featurette-rt {padding: 40px; flex: 1; position: relative;}
@@ -66,9 +67,12 @@
 
     .featurette-lt { padding: 20px;}
     .featurette-lt .featurette-cnt {padding: 12px;}
-    .featurette-lt .h1b {font-size: 40px; line-height: 1; margin-bottom: 15px;}
+    .featurette-lt .kisp-type:not(:has(span)) {margin: 0 0 43px 0;}
+    .featurette-lt .h1b {font-size: 40px; line-height: 1; margin-bottom: 9px;}
 
     .featurette-single:nth-child(2n) {flex-direction: column-reverse;}
+    
+    .flex-row-reverse .featurette-single .featurette-rt .featurette-thumb {transform: none;}
 
 }
 @media only screen and (max-width: 389px) and (min-width: 200px) {
