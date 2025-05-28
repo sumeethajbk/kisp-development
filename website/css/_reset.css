@@ -85,8 +85,8 @@ background-size: 8px 2px; background-repeat: repeat-x; height: 2px; width: 100%;
 ::-moz-selection {background-color: var(--brand-green); color: #fff;}
 
 
-input, textarea, select {outline: 0; width: 100%; font-size: 1rem; line-height: normal; background:transparent; box-shadow: none; padding: 15px 16px 16px 16px; vertical-align: middle; font-weight: bold; height: auto; transition: all .5s ease-in-out; transition-duration: .75s; transition-property: all; transition-timing-function: cubic-bezier(.075,.82,.165,1); border: 1px solid var(--brand-green); border-radius: 0;}
-select {padding:15px 46px 16px 16px;}
+input, textarea, select {outline: 0; width: 100%; font-size: 1rem; line-height: normal; background:transparent; box-shadow: none; padding: 14px 16px 14px; vertical-align: middle; font-weight: bold; height: auto; transition: all .5s ease-in-out; transition-duration: .75s; transition-property: all; transition-timing-function: cubic-bezier(.075,.82,.165,1); border: 1px solid var(--brand-green); border-radius: 0;}
+select {padding:14px 46px 14px 16px;}
 textarea {width: 100%; resize: none; height: 118px;}
 input:focus, textarea:focus {outline: 0;}
 input[type="button"], input[type="reset"], input[type="submit"] {display: inline-block; font-size:1rem; font-weight: bold; line-height: 100%; padding:16px; vertical-align: middle; cursor: pointer; border:0 none; background-color: var(--base-foreground); position: relative; transition: all .35s ease-in-out; -webkit-transition: all .35s ease-in-out; -moz-transition: all .35s ease-in-out; text-align: center; color: var(--white); font-family:"FK Grotesk Neue", sans-serif; text-decoration: none; overflow: hidden; z-index: 1; border-radius: 0; outline: 0; box-sizing: border-box;}
@@ -160,13 +160,20 @@ img.alignnone {margin:24px 0 23px; display: block; clear: both;}
 .table-cell {display: table-cell; vertical-align: middle;}
 .grid {display: grid; display: -moz-grid; display: -ms-grid;}
 
-
+@media only screen and (max-width: 1280px) and (min-width:200px) {
+  ::-webkit-input-placeholder {font-size: 0.875rem!important;}
+:-moz-placeholder {font-size: 0.875rem!important;}
+::-moz-placeholder {font-size: 0.875rem!important;}
+:-ms-input-placeholder {font-size: 0.875rem!important;}  
+}
 
 @media only screen and (max-width: 1023px) and (min-width: 768px) {
     .big-green {letter-spacing: 0.96px; font-size: 3rem; padding: 8px 16px 2px 16px;}
 }
 
 @media only screen and (max-width: 767px) and (min-width:200px) {
+
+    
     .big-green {letter-spacing: 0.8px; font-size: 2.5rem; padding: 8px 16px 2px 16px; flex-grow: 1; text-align: center; justify-content: center; display: inline-flex;}
     .white-btn{padding: 18px 20px 12px 20px;}
 }

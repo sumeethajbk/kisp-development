@@ -93,32 +93,32 @@ jQuery(document).ready(function () {
       });
     });
   }
-    if (jQuery(window).width() <= 767) {
-      jQuery(".pb-slider-nav .pb-bg").css("background", "");
-      jQuery(".pb-slider-nav .pb-thumb-nav").css("color", "");
+  if (jQuery(window).width() <= 767) {
+    jQuery(".pb-slider-nav .pb-bg").css("background", "");
+    jQuery(".pb-slider-nav .pb-thumb-nav").css("color", "");
 
-      jQuery(".pb-slider-for").slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: false,
-        fade: true,
-        asNavFor: ".pb-slider-nav",
-      });
-      jQuery(".pb-slider-nav").slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        asNavFor: ".pb-slider-for",
-        dots: false,
-        arrows: true,
-        variableWidth: true,
-        centerMode: true,
-        appendArrows: ".custom-arrows",
-        prevArrow: '<div class="slick-arrow slick-prev flex flex-center" aria-label="Previous Arrow" role="button"><span><i class="fa-sharp fa-regular fa-arrow-left"></i></span></div>',
-        nextArrow: '<div class="slick-arrow slick-next flex flex-center" aria-label="Next Arrow" role="button"><span><i class="fa-sharp fa-regular fa-arrow-right"></i></span></div>',
-        focusOnSelect: true,
-      });
-    }
-  
+    jQuery(".pb-slider-for").slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      fade: true,
+      asNavFor: ".pb-slider-nav",
+    });
+    jQuery(".pb-slider-nav").slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      asNavFor: ".pb-slider-for",
+      dots: false,
+      arrows: true,
+      variableWidth: true,
+      centerMode: true,
+      appendArrows: ".custom-arrows",
+      prevArrow: '<div class="slick-arrow slick-prev flex flex-center" aria-label="Previous Arrow" role="button"><span><i class="fa-sharp fa-regular fa-arrow-left"></i></span></div>',
+      nextArrow: '<div class="slick-arrow slick-next flex flex-center" aria-label="Next Arrow" role="button"><span><i class="fa-sharp fa-regular fa-arrow-right"></i></span></div>',
+      focusOnSelect: true,
+    });
+  }
+
 
   /* Product Features */
   if (jQuery(window).width() >= 768) {
@@ -192,11 +192,20 @@ jQuery(document).ready(function () {
       variableWidth: true,
       centerMode: true,
       appendArrows: ".custom-arrows",
-      prevArrow:
-        '<div class="slick-arrow slick-prev flex flex-center" aria-label="Previous Arrow" role="button"><span><i class="fa-sharp fa-regular fa-arrow-left"></i></span></div>',
-      nextArrow:
-        '<div class="slick-arrow slick-next flex flex-center" aria-label="Next Arrow" role="button"><span><i class="fa-sharp fa-regular fa-arrow-right"></i></span></div>',
+      prevArrow: '<div class="slick-arrow slick-prev flex flex-center" aria-label="Previous Arrow" role="button"><span><i class="fa-sharp fa-regular fa-arrow-left"></i></span></div>',
+      nextArrow: '<div class="slick-arrow slick-next flex flex-center" aria-label="Next Arrow" role="button"><span><i class="fa-sharp fa-regular fa-arrow-right"></i></span></div>',
       focusOnSelect: true,
     });
   }
+
+  /* CTA Form */
+  jQuery('.frm_form_field input, .frm_form_field textarea').on('input focus', function () {
+    var inputLength = jQuery(this).val().length;
+    if (inputLength > 0) {
+      jQuery(this).addClass('input-has-value');
+    } else {
+      jQuery(this).removeClass('input-has-value');
+    }
+  });
+
 });
