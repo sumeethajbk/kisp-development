@@ -13,12 +13,6 @@
 
 .model-overlay-hide {overflow:hidden;}
 
-.white-header .main_header {background: transparent;}
-.white-header .main_header.fixed-header {background: var(--brand-green);}
-
-.main_header.fixed-header .normal-logo {visibility:hidden; opacity:0;}
-.main_header.fixed-header .fixed-logo {visibility:visible; opacity:1;}
-
 @media only screen and (max-width:1400px) {
     .main_header .container {padding: 0 80px;}
 }
@@ -47,7 +41,6 @@ ul.main_menu > li.current_page_item>a,
 ul.main_menu > li > a:hover, 
 ul.main_menu > li.current_page_item a > span, 
 ul.main_menu > li.current_page_ancestor li.current-page-ancestor a > span {color:var(--white);}
-ul.main_menu > li.menu-item-has-children >a::after {opacity: 0;}
 
  /* Mega Menu */
 ul.main_menu li.flex-menu {position: inherit;}
@@ -64,12 +57,6 @@ ul.main_menu li.flex-menu > ul > li ul li .kisp-type {margin: 0 0 20px 0;}
 ul.main_menu li.flex-menu > ul > li ul li .menu-shadow {width: calc(100% + 16px); height: calc(100% + 16px); display: block; background: var(--brand-mint);
 z-index: -1; left: -16px; top: -16px; clip-path: var(--path-16); }  
 ul.main_menu li.flex-menu > ul > li ul li .inline-underline-wrp {display: block; clear: both; margin: auto 0 0 0; line-height: 1; padding: 20px 0 0 0;}
-    
-ul.main_menu li.flex-menu > ul > li.li-flex-wrap {display: flex; flex-wrap: nowrap; justify-content: space-between; gap: 0;}
-ul.main_menu li.flex-menu > ul > li.li-flex-wrap ul {width:94%; gap:40px 6%; flex-grow: 1;}
-ul.main_menu li.flex-menu > ul > li.li-flex-wrap ul li {width: 21%;}
-ul.main_menu li.flex-menu > ul > li.li-flex-wrap ul.non-flex-ul {width: 32.9%; flex-grow: 1; gap:0; padding-left: 0;}
-ul.main_menu li.flex-menu > ul > li.li-flex-wrap ul.non-flex-ul li {width: 100%; margin-left: 17%;}
     
 ul.main_menu li.flex-menu .h5 a {font-size: 1.75rem;}
 ul.main_menu li.flex-menu .menu-icon {margin-bottom: 20px; position: relative; width: 100%; line-height: 30px; height: 30px;}
@@ -91,6 +78,7 @@ nav.navigation {transition:.4s all ease-in-out; margin:4px 0 0 0;}
     
     
 /* White Header */
+    .white-header .main_header {background: transparent;}
 .white-header .main_header .container {max-width: 1440px; padding: 0 40px;}
 .white-header .main_header .logo {width: 160px; height: 160px;}
 .white-header .main_header .header_right {width:calc(100% - 160px); margin-bottom: auto; padding: 0 4px 0 0;}
@@ -131,7 +119,7 @@ nav.navigation {transition:.4s all ease-in-out; margin:4px 0 0 0;}
 .main_header.fixed-header {box-shadow: -1px 3px 17px -10px rgba(0, 0, 0, 0.75); -webkit-box-shadow: -1px 3px 17px -10px rgb(0 0 0 / .75); -moz-box-shadow: -1px 3px 17px -10px rgb(0 0 0 / .75);}
 .main_header.fixed-header .container {max-width: 1440px; padding: 0 40px;}
 .main_header.fixed-header .logo {width:56px; height:56px;}
-.main_header.fixed-header .logo-pos {top:17px;}
+.main_header.fixed-header .logo-pos {top:20px;}
 .main_header.fixed-header .header {padding: 0;}
 .main_header.fixed-header .header_right {width:calc(100% - 56px); padding-right: 0;}
 .main_header.fixed-header .header-btns {right: -40px; margin:0 0 0 -8px;}
@@ -152,7 +140,9 @@ nav.navigation {transition:.4s all ease-in-out; margin:4px 0 0 0;}
     ul.main_menu li.flex-menu > ul {padding: 80px 32px;}
 }
 
-
+/*@media only screen and (max-width:1023px) {
+    .header_right {display: none;}
+}*/
 @media only screen and (max-width:1023px) and (min-width:810px) {
     .main_header .header {padding: 32px 0; max-height: 101px;}
     .main_header .logo {width: 96px; height: 96px;}
@@ -163,12 +153,6 @@ nav.navigation {transition:.4s all ease-in-out; margin:4px 0 0 0;}
     ul.main_menu > li > ul::after {height:33px; margin-top: -33px;}
     ul.main_menu > li.menu-item-has-children:hover > a::before {bottom: -45px;}
     ul.main_menu li.flex-menu > ul > li ul li {width: 47%;}
-    
-    ul.main_menu li.flex-menu > ul > li.li-flex-wrap {flex-wrap: wrap; gap: 26px;}
-ul.main_menu li.flex-menu > ul > li.li-flex-wrap ul {width:100%; gap:40px 4.5%; flex-grow: 1;}
-ul.main_menu li.flex-menu > ul > li.li-flex-wrap ul li {width:47.75%;}
-ul.main_menu li.flex-menu > ul > li.li-flex-wrap ul.non-flex-ul {width:100%;}
-ul.main_menu li.flex-menu > ul > li.li-flex-wrap ul.non-flex-ul li {width: 100%; margin-left:16px;}
     
     .white-header .main_header .header {max-height: 101px;}
     .white-header .main_header .logo {width: 96px; height: 96px;}
