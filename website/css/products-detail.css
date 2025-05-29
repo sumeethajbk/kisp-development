@@ -90,12 +90,14 @@
   .pf-slider-nav .slick-list{overflow: inherit;}
   .pf-slider-nav .pf-thumb{margin: 0 13px; width: 312px;}
   .pf-thumb .pf-thumb-nav{background-color: var(--white);}
-  .custom-arrows{padding-top: 20px; gap: 42px; width: fit-content; margin: auto;}
+  .custom-arrows{padding-top: 27px; gap: 42px; width: fit-content; margin: auto;}
   .custom-arrows .slick-arrow{position: relative;}
 
   .pf-slide .pf-rt-cnt { padding: 30px 0;}
 
   .pf-slide .pf-rt-shadow {clip-path: var(--path-25);}
+
+    .featurette-rt .featurette-thumb {transform : inherit!important}
 }
 
 

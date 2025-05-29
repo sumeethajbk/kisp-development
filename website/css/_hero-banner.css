@@ -17,7 +17,8 @@
 
 /*-- media starts here --*/
 
-@media only screen and (max-width:1280px) and (min-width:1024px) {
+@media only screen and (max-width:1439px) and (min-width:1024px) {
+    
 .hero-banner-main {min-height: 600px;}
 .hero-banner-main .hero-banner-thumb { width: 46.89%; }
 .hero-banner-main .hero-banner-text { width: calc(100% - 50.5%); }
@@ -52,7 +53,7 @@
 @media only screen and (max-width: 767px) and (min-width: 200px){
     .hero-banner-section {padding: 20px 0 0;}
     .hero-banner-section .container { padding: 0 20px;}
-    .hero-banner-section .optional-text {margin: 0 0 14px 0;}
+    .hero-banner-section .optional-text {margin: 0 0 14px 0; width: 180px;}
     .hero-banner-main .hero-banner-thumb { clip-path: var(--path-80); }
     .hero-banner-main { gap: 40px;}
     .hero-banner-main .hero-banner-text {padding: 0 0 40px;}
